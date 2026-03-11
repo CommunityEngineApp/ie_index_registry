@@ -1,15 +1,18 @@
 {
   "meta": {
     "name": "Innovative EcoSystems Index Registry",
-    "version": "1.0.0",
-    "last_updated": "2026-03-10",
-    "total_indices": 100,
+    "version": "2.0.0",
+    "last_updated": "2026-03-11",
+    "total_indices": 163,
     "owner": "Innovative EcoSystems",
     "github": "https://github.com/CommunityEngineApp/ie_index_registry",
-    "description": "Master registry of all global indices used to power the IEPA (Innovative EcoSystems Prosperity Algorithm). Each index is mapped to an IEPA Foundation Factor, weighted, and tagged for use in algorithm computation and UI display."
+    "description": "Master registry of all global indices used to power the IEPA (Innovative EcoSystems Prosperity Algorithm). Each index is mapped to an IEPA Foundation Factor, weighted, tagged, and enriched with available data years for historical loading (2020\u20132024).",
+    "changelog": {
+      "v2.0.0": "Added 58 new indices across all IEPA factors. Added data_years field to all entries for 2020-2024 historical data pipeline. Enhanced schema with improved coverage metadata.",
+      "v1.0.0": "Initial release with 105 indices."
+    }
   },
   "indices": [
-
     {
       "id": "GII",
       "name": "Global Innovation Index",
@@ -20,13 +23,26 @@
       "country_coverage": 133,
       "iepa_zone": "Foundations",
       "iepa_factor": "Innovation Capacity",
-      "iepa_weight": 0.20,
+      "iepa_weight": 0.2,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "Excel, PDF",
       "notes": "7 pillars covering institutions, human capital, infrastructure, market sophistication, business sophistication, knowledge outputs, and creative outputs. Most trusted global innovation benchmark.",
-      "tags": ["innovation", "R&D", "IP", "infrastructure", "primary"]
+      "tags": [
+        "innovation",
+        "R&D",
+        "IP",
+        "infrastructure",
+        "primary"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "BII",
@@ -38,13 +54,25 @@
       "country_coverage": 95,
       "iepa_zone": "Foundations",
       "iepa_factor": "Innovation Capacity",
-      "iepa_weight": 0.10,
+      "iepa_weight": 0.1,
       "tier": "Secondary",
       "data_access": "Free (summary) / Paid (full)",
       "license": "Restricted",
       "format": "Web, PDF",
       "notes": "Covers R&D intensity, manufacturing value-add, productivity, high-tech density, tertiary education, and patent activity.",
-      "tags": ["innovation", "R&D", "manufacturing", "patents"]
+      "tags": [
+        "innovation",
+        "R&D",
+        "manufacturing",
+        "patents"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GCI",
@@ -56,13 +84,25 @@
       "country_coverage": 141,
       "iepa_zone": "Foundations",
       "iepa_factor": "Innovation Capacity",
-      "iepa_weight": 0.10,
+      "iepa_weight": 0.1,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "Excel, PDF",
       "notes": "12 pillars. Institutions, infrastructure, ICT adoption, macroeconomic stability, health, skills, product market, labour market, financial system, market size, business dynamism, and innovation.",
-      "tags": ["competitiveness", "institutions", "infrastructure", "innovation"]
+      "tags": [
+        "competitiveness",
+        "institutions",
+        "infrastructure",
+        "innovation"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "NRI",
@@ -80,7 +120,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Technology, people, governance, and impact pillars. Strong digital infrastructure signal.",
-      "tags": ["digital", "ICT", "technology", "network"]
+      "tags": [
+        "digital",
+        "ICT",
+        "technology",
+        "network"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "IMD_DIGITAL",
@@ -98,7 +150,19 @@
       "license": "Restricted",
       "format": "PDF, Web",
       "notes": "Knowledge, technology, and future readiness. Strong signal for digital ecosystem maturity.",
-      "tags": ["digital", "technology", "AI", "competitiveness"]
+      "tags": [
+        "digital",
+        "technology",
+        "AI",
+        "competitiveness"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "AI_READINESS",
@@ -116,7 +180,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Government, technology sector, and data & infrastructure pillars. Increasingly critical for FDI conversations.",
-      "tags": ["AI", "digital", "government", "data"]
+      "tags": [
+        "AI",
+        "digital",
+        "government",
+        "data"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "ITU_ICT",
@@ -134,7 +209,18 @@
       "license": "Open",
       "format": "Excel, PDF",
       "notes": "Covers ICT access, use, and skills. Important baseline for emerging market digital infrastructure.",
-      "tags": ["ICT", "digital", "infrastructure", "access"]
+      "tags": [
+        "ICT",
+        "digital",
+        "infrastructure",
+        "access"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "CYBERSECURITY",
@@ -152,7 +238,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Legal, technical, organizational, capacity development, and cooperation pillars.",
-      "tags": ["cybersecurity", "digital", "governance", "infrastructure"]
+      "tags": [
+        "cybersecurity",
+        "digital",
+        "governance",
+        "infrastructure"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2024
+      ]
     },
     {
       "id": "WIPO_PATENTS",
@@ -170,7 +267,19 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Raw patent filing data by country. Strong proxy for commercializable innovation output.",
-      "tags": ["patents", "IP", "R&D", "innovation output"]
+      "tags": [
+        "patents",
+        "IP",
+        "R&D",
+        "innovation output"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "OECD_MSTI",
@@ -188,7 +297,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "R&D expenditure, personnel, and output data. Best source for R&D intensity (R&D as % of GDP).",
-      "tags": ["R&D", "GERD", "science", "technology"]
+      "tags": [
+        "R&D",
+        "GERD",
+        "science",
+        "technology"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "COURSERA_SKILLS",
@@ -206,7 +327,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Business, technology, and data science skill penetration by country. Good emerging market signal.",
-      "tags": ["skills", "digital", "education", "workforce"]
+      "tags": [
+        "skills",
+        "digital",
+        "education",
+        "workforce"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WEF_TECH_FRONTIER",
@@ -224,9 +357,17 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Technology adoption rates and frontier technology deployment across emerging and advanced economies.",
-      "tags": ["technology", "adoption", "frontier", "emerging markets"]
+      "tags": [
+        "technology",
+        "adoption",
+        "frontier",
+        "emerging markets"
+      ],
+      "data_years": [
+        2023,
+        2024
+      ]
     },
-
     {
       "id": "GEI",
       "name": "Global Entrepreneurship Index",
@@ -237,13 +378,24 @@
       "country_coverage": 137,
       "iepa_zone": "Foundations",
       "iepa_factor": "Entrepreneurship Capacity",
-      "iepa_weight": 0.20,
+      "iepa_weight": 0.2,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "14 pillars across entrepreneurial attitudes, abilities, and aspirations. Best available global entrepreneurship composite.",
-      "tags": ["entrepreneurship", "startups", "founder", "ecosystem"]
+      "tags": [
+        "entrepreneurship",
+        "startups",
+        "founder",
+        "ecosystem"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "STARTUP_GENOME",
@@ -261,7 +413,19 @@
       "license": "Restricted",
       "format": "PDF",
       "notes": "City-level ecosystem rankings. Performance, funding, market reach, talent, and connectedness. Critical for Tier 1 market benchmarking.",
-      "tags": ["startups", "VC", "ecosystem", "city-level"]
+      "tags": [
+        "startups",
+        "VC",
+        "ecosystem",
+        "city-level"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WB_BUSINESS_READY",
@@ -279,7 +443,15 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Replaced Doing Business. Regulatory framework, public services, and operational efficiency pillars. Strong ease-of-doing-business signal.",
-      "tags": ["business environment", "regulatory", "startups", "SME"]
+      "tags": [
+        "business environment",
+        "regulatory",
+        "startups",
+        "SME"
+      ],
+      "data_years": [
+        2024
+      ]
     },
     {
       "id": "GEM",
@@ -297,7 +469,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Survey-based. Early-stage entrepreneurial activity, motivational index, societal attitudes. Best longitudinal entrepreneurship survey.",
-      "tags": ["entrepreneurship", "TEA", "attitudes", "survey"]
+      "tags": [
+        "entrepreneurship",
+        "TEA",
+        "attitudes",
+        "survey"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "VC_KPMG",
@@ -315,7 +499,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "VC deal flow, funding by stage, and sector. Best freely available VC activity tracker by country.",
-      "tags": ["VC", "funding", "startups", "investment"]
+      "tags": [
+        "VC",
+        "funding",
+        "startups",
+        "investment"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WB_FINDEX",
@@ -332,8 +528,18 @@
       "data_access": "Free",
       "license": "Open",
       "format": "Excel, API",
-      "notes": "Financial inclusion — account ownership, savings, borrowing, payments. Proxy for access to capital for founders.",
-      "tags": ["financial inclusion", "access to finance", "banking", "capital"]
+      "notes": "Financial inclusion \u2014 account ownership, savings, borrowing, payments. Proxy for access to capital for founders.",
+      "tags": [
+        "financial inclusion",
+        "access to finance",
+        "banking",
+        "capital"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "ITC_SME",
@@ -351,7 +557,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Compete, connect, and change pillars for SMEs. Strong signal for scale-up pathway quality.",
-      "tags": ["SME", "competitiveness", "trade", "scale-up"]
+      "tags": [
+        "SME",
+        "competitiveness",
+        "trade",
+        "scale-up"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "FEI",
@@ -369,7 +587,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "3 pillars: entrepreneurial environment, ecosystem, and aspiration. Important inclusion signal for emerging markets.",
-      "tags": ["gender", "female", "entrepreneurship", "inclusion"]
+      "tags": [
+        "gender",
+        "female",
+        "entrepreneurship",
+        "inclusion"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "GIIN_IMPACT",
@@ -387,7 +616,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Impact capital flows and market maturity. Strong signal for emerging market investment readiness.",
-      "tags": ["impact investing", "ESG", "capital", "emerging markets"]
+      "tags": [
+        "impact investing",
+        "ESG",
+        "capital",
+        "emerging markets"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "BCG_INNOVATION",
@@ -405,7 +646,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Corporate innovation capacity and culture index. Proxy for private sector innovation absorption.",
-      "tags": ["corporate innovation", "R&D", "private sector", "culture"]
+      "tags": [
+        "corporate innovation",
+        "R&D",
+        "private sector",
+        "culture"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "DEALROOM_ECOSYSTEMS",
@@ -423,9 +676,20 @@
       "license": "Restricted",
       "format": "Web, PDF",
       "notes": "VC-backed startup valuations, unicorn counts, and ecosystem growth rates. Best real-time funding data.",
-      "tags": ["startups", "VC", "unicorn", "ecosystem", "funding"]
+      "tags": [
+        "startups",
+        "VC",
+        "unicorn",
+        "ecosystem",
+        "funding"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
-
     {
       "id": "GPI",
       "name": "Global Peace Index",
@@ -442,7 +706,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Ongoing conflict, safety and security, and militarisation pillars. Critical guardrail variable in IEPA.",
-      "tags": ["peace", "stability", "security", "conflict"]
+      "tags": [
+        "peace",
+        "stability",
+        "security",
+        "conflict"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "EPI",
@@ -454,13 +730,23 @@
       "country_coverage": 180,
       "iepa_zone": "Foundations",
       "iepa_factor": "Resilience",
-      "iepa_weight": 0.10,
+      "iepa_weight": 0.1,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "Excel, API",
       "notes": "40 performance indicators across 11 issue categories in ecosystem vitality and environmental health.",
-      "tags": ["environment", "climate", "sustainability", "ESG"]
+      "tags": [
+        "environment",
+        "climate",
+        "sustainability",
+        "ESG"
+      ],
+      "data_years": [
+        2020,
+        2022,
+        2024
+      ]
     },
     {
       "id": "HDI",
@@ -472,13 +758,25 @@
       "country_coverage": 193,
       "iepa_zone": "Foundations",
       "iepa_factor": "Resilience",
-      "iepa_weight": 0.10,
+      "iepa_weight": 0.1,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "Excel, API",
       "notes": "Health, education, and living standards composite. Foundational human capital baseline.",
-      "tags": ["human development", "health", "education", "income"]
+      "tags": [
+        "human development",
+        "health",
+        "education",
+        "income"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "SPI",
@@ -496,7 +794,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Basic human needs, wellbeing, and opportunity pillars. Non-economic resilience signal.",
-      "tags": ["social progress", "wellbeing", "inclusion", "opportunity"]
+      "tags": [
+        "social progress",
+        "wellbeing",
+        "inclusion",
+        "opportunity"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "CPI",
@@ -514,7 +824,19 @@
       "license": "Open",
       "format": "Excel, PDF",
       "notes": "Perceived levels of public sector corruption. Strong institutional trust and FDI deterrent signal.",
-      "tags": ["corruption", "governance", "institutions", "trust"]
+      "tags": [
+        "corruption",
+        "governance",
+        "institutions",
+        "trust"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "RULE_OF_LAW",
@@ -532,7 +854,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "8 factors: constraints on government powers, absence of corruption, open government, fundamental rights, order & security, regulatory enforcement, civil justice, criminal justice.",
-      "tags": ["rule of law", "justice", "governance", "rights"]
+      "tags": [
+        "rule of law",
+        "justice",
+        "governance",
+        "rights"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "FSI",
@@ -549,8 +883,20 @@
       "data_access": "Free",
       "license": "Open",
       "format": "Excel",
-      "notes": "12 indicators of state fragility. Key inverse guardrail for IEPA — high fragility penalizes score.",
-      "tags": ["fragility", "stability", "conflict", "governance"]
+      "notes": "12 indicators of state fragility. Key inverse guardrail for IEPA \u2014 high fragility penalizes score.",
+      "tags": [
+        "fragility",
+        "stability",
+        "conflict",
+        "governance"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "DEMOCRACY_INDEX",
@@ -568,7 +914,19 @@
       "license": "Restricted",
       "format": "PDF",
       "notes": "Electoral process, civil liberties, political participation, political culture, functioning of government.",
-      "tags": ["democracy", "governance", "civil liberties", "political"]
+      "tags": [
+        "democracy",
+        "governance",
+        "civil liberties",
+        "political"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "FREEDOM_HOUSE",
@@ -586,7 +944,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Political rights and civil liberties. Complements Democracy Index with broader country coverage.",
-      "tags": ["freedom", "civil liberties", "political rights", "press"]
+      "tags": [
+        "freedom",
+        "civil liberties",
+        "political rights",
+        "press"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "SDG_INDEX",
@@ -604,7 +974,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Progress across all 17 SDGs. Comprehensive sustainability and resilience baseline.",
-      "tags": ["SDGs", "sustainability", "development", "wellbeing"]
+      "tags": [
+        "SDGs",
+        "sustainability",
+        "development",
+        "wellbeing"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "ENERGY_TRANSITION",
@@ -622,7 +1004,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Energy system performance and transition readiness. Critical for long-term resilience and ESG-aligned FDI.",
-      "tags": ["energy", "climate", "transition", "sustainability"]
+      "tags": [
+        "energy",
+        "climate",
+        "transition",
+        "sustainability"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GII_GENDER",
@@ -640,7 +1034,19 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Health, empowerment, and labour market dimensions. Social cohesion signal for inclusive ecosystem development.",
-      "tags": ["gender", "inequality", "inclusion", "social"]
+      "tags": [
+        "gender",
+        "inequality",
+        "inclusion",
+        "social"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "CLIMATE_VULNERABILITY",
@@ -658,7 +1064,19 @@
       "license": "Restricted",
       "format": "API, Excel",
       "notes": "Physical climate risk exposure. Growing FDI consideration, especially for infrastructure-heavy investment.",
-      "tags": ["climate risk", "vulnerability", "resilience", "ESG"]
+      "tags": [
+        "climate risk",
+        "vulnerability",
+        "resilience",
+        "ESG"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "SOCIAL_COHESION",
@@ -676,9 +1094,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Social relations, connectedness, and focus on the common good. Underutilized but powerful signal.",
-      "tags": ["social cohesion", "trust", "community", "inclusion"]
+      "tags": [
+        "social cohesion",
+        "trust",
+        "community",
+        "inclusion"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
-
     {
       "id": "WGI_GOV_EFF",
       "name": "Government Effectiveness (WGI)",
@@ -695,7 +1123,18 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Part of Worldwide Governance Indicators. Quality of public services, civil service, policy formulation. Core alignment proxy.",
-      "tags": ["governance", "government", "public services", "policy"]
+      "tags": [
+        "governance",
+        "government",
+        "public services",
+        "policy"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "WGI_REG_QUALITY",
@@ -713,7 +1152,18 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Ability of government to formulate and implement sound policies enabling private sector development.",
-      "tags": ["regulatory", "governance", "policy", "private sector"]
+      "tags": [
+        "regulatory",
+        "governance",
+        "policy",
+        "private sector"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "ECONOMIC_FREEDOM",
@@ -725,13 +1175,25 @@
       "country_coverage": 184,
       "iepa_zone": "Foundations",
       "iepa_factor": "Alignment",
-      "iepa_weight": 0.10,
+      "iepa_weight": 0.1,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "Excel",
       "notes": "12 freedoms across rule of law, government size, regulatory efficiency, and market openness.",
-      "tags": ["economic freedom", "regulatory", "trade", "investment"]
+      "tags": [
+        "economic freedom",
+        "regulatory",
+        "trade",
+        "investment"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "OPEN_GOVERNMENT",
@@ -749,7 +1211,19 @@
       "license": "Open",
       "format": "PDF, Web",
       "notes": "Government transparency, accountability, and civic participation commitments. Strong alignment signal.",
-      "tags": ["open government", "transparency", "accountability", "civic"]
+      "tags": [
+        "open government",
+        "transparency",
+        "accountability",
+        "civic"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "TRADE_FACILITATION",
@@ -767,7 +1241,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "11 policy areas for border crossing procedures. Key metric for market access and trade alignment.",
-      "tags": ["trade", "border", "customs", "logistics"]
+      "tags": [
+        "trade",
+        "border",
+        "customs",
+        "logistics"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "PPP_READINESS",
@@ -785,7 +1271,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Regulatory framework, institutional capacity, investment climate for PPP. Especially relevant for IE's government clients.",
-      "tags": ["PPP", "infrastructure", "investment", "regulatory"]
+      "tags": [
+        "PPP",
+        "infrastructure",
+        "investment",
+        "regulatory"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "PAYING_TAXES",
@@ -803,7 +1300,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Total tax rate, time to comply, and post-filing processes. Key friction signal for entrepreneurs and investors.",
-      "tags": ["taxation", "regulatory", "business environment", "compliance"]
+      "tags": [
+        "taxation",
+        "regulatory",
+        "business environment",
+        "compliance"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "OECD_PSI",
@@ -821,7 +1329,18 @@
       "license": "Open",
       "format": "Web, PDF",
       "notes": "Government's capacity to innovate. Measures mission-oriented, enhancement, adaptive, and anticipatory innovation.",
-      "tags": ["public sector", "government innovation", "policy", "OECD"]
+      "tags": [
+        "public sector",
+        "government innovation",
+        "policy",
+        "OECD"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GTCI",
@@ -839,7 +1358,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Enable, attract, grow, retain, vocational, and global knowledge skills pillars. Critical talent mobility signal.",
-      "tags": ["talent", "skills", "workforce", "mobility"]
+      "tags": [
+        "talent",
+        "skills",
+        "workforce",
+        "mobility"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "UNIV_INDUSTRY",
@@ -857,7 +1388,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Drawn from GCI data. Measures collaboration in R&D between universities and businesses.",
-      "tags": ["university", "industry", "collaboration", "R&D"]
+      "tags": [
+        "university",
+        "industry",
+        "collaboration",
+        "R&D"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "KOF_GLOBALISATION",
@@ -875,9 +1417,20 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Economic, social, and political globalisation dimensions. Strong proxy for market openness and international alignment.",
-      "tags": ["globalisation", "trade", "openness", "integration"]
+      "tags": [
+        "globalisation",
+        "trade",
+        "openness",
+        "integration"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
-
     {
       "id": "FDI_CONFIDENCE",
       "name": "FDI Confidence Index",
@@ -888,13 +1441,26 @@
       "country_coverage": 25,
       "iepa_zone": "Engine",
       "iepa_factor": "FDI Accelerator",
-      "iepa_weight": 0.20,
+      "iepa_weight": 0.2,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "PDF",
       "notes": "C-suite survey of top FDI destination intentions. Leading indicator of capital flow direction. Key IEPA accelerator input.",
-      "tags": ["FDI", "confidence", "investment", "cross-border"]
+      "tags": [
+        "FDI",
+        "confidence",
+        "investment",
+        "cross-border"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
     },
     {
       "id": "UNCTAD_WIR",
@@ -912,7 +1478,20 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Definitive annual FDI statistics and trends. Inflows, outflows, greenfield, M&A by country and sector.",
-      "tags": ["FDI", "investment", "UNCTAD", "greenfield", "M&A"]
+      "tags": [
+        "FDI",
+        "investment",
+        "UNCTAD",
+        "greenfield",
+        "M&A"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WB_FDI",
@@ -930,7 +1509,19 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Net FDI inflows as % of GDP. Standard World Bank data series. Longitudinal comparison baseline.",
-      "tags": ["FDI", "investment", "GDP", "World Bank"]
+      "tags": [
+        "FDI",
+        "investment",
+        "GDP",
+        "World Bank"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "LPI",
@@ -948,7 +1539,19 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Customs, infrastructure, international shipments, logistics quality, tracking, timeliness. Market access proxy.",
-      "tags": ["logistics", "infrastructure", "trade", "supply chain"]
+      "tags": [
+        "logistics",
+        "infrastructure",
+        "trade",
+        "supply chain"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "MARKET_POTENTIAL",
@@ -966,7 +1569,19 @@
       "license": "Open",
       "format": "Web",
       "notes": "Market size, growth rate, intensity, consumption capacity, commercial infrastructure, receptivity, country risk, and economic freedom.",
-      "tags": ["market potential", "emerging markets", "FDI", "consumption"]
+      "tags": [
+        "market potential",
+        "emerging markets",
+        "FDI",
+        "consumption"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "SEZ_INDEX",
@@ -984,7 +1599,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "SEZ governance, incentive structure, and performance. Directly relevant for IE's government advisory clients.",
-      "tags": ["SEZ", "FDI", "investment zones", "incentives"]
+      "tags": [
+        "SEZ",
+        "FDI",
+        "investment zones",
+        "incentives"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "JLL_TRANSPARENCY",
@@ -1002,7 +1629,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Investment performance measurement, market fundamentals, governance, regulatory, transaction process, sustainability.",
-      "tags": ["real estate", "transparency", "investment", "infrastructure"]
+      "tags": [
+        "real estate",
+        "transparency",
+        "investment",
+        "infrastructure"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2024
+      ]
     },
     {
       "id": "INFRASTRUCTURE_QUALITY",
@@ -1020,7 +1658,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Transport, utility, and connectivity infrastructure quality. Core physical infrastructure signal for FDI attraction.",
-      "tags": ["infrastructure", "transport", "utilities", "FDI"]
+      "tags": [
+        "infrastructure",
+        "transport",
+        "utilities",
+        "FDI"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "TAX_COMPETITIVENESS",
@@ -1038,7 +1688,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Corporate tax, individual tax, consumption tax, property tax, international rules. Important for investment climate framing.",
-      "tags": ["tax", "investment climate", "competitiveness", "regulatory"]
+      "tags": [
+        "tax",
+        "investment climate",
+        "competitiveness",
+        "regulatory"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "EXPAT_RANKINGS",
@@ -1056,7 +1718,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Quality of life, ease of settling in, working abroad, personal finance, and expat essentials. Talent mobility proxy.",
-      "tags": ["expat", "talent", "mobility", "quality of life"]
+      "tags": [
+        "expat",
+        "talent",
+        "mobility",
+        "quality of life"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GCI_MARKET_SIZE",
@@ -1074,9 +1748,20 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Domestic and foreign market size pillar from GCR. Proxy for scale opportunity available to ecosystem participants.",
-      "tags": ["market size", "domestic market", "scale", "FDI"]
+      "tags": [
+        "market size",
+        "domestic market",
+        "scale",
+        "FDI"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
-
     {
       "id": "GSCI",
       "name": "Global Sustainable Competitiveness Index",
@@ -1093,7 +1778,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Natural capital, resource efficiency, intellectual capital, governance, social cohesion, economic sustainability. Broad long-term prosperity outcome measure.",
-      "tags": ["sustainability", "competitiveness", "prosperity", "long-term"]
+      "tags": [
+        "sustainability",
+        "competitiveness",
+        "prosperity",
+        "long-term"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "IMF_GDP_GROWTH",
@@ -1111,7 +1808,19 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "GDP growth, forecasts, and structural economic data. Primary outcome validation variable for IEPA.",
-      "tags": ["GDP", "growth", "economic output", "forecasts"]
+      "tags": [
+        "GDP",
+        "growth",
+        "economic output",
+        "forecasts"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "ILO_EMPLOYMENT",
@@ -1123,13 +1832,25 @@
       "country_coverage": 190,
       "iepa_zone": "Outcomes",
       "iepa_factor": "Prosperity Outcomes",
-      "iepa_weight": 0.10,
+      "iepa_weight": 0.1,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Employment rates, job quality, and labor market trends. Job creation is a core IEPA outcome metric.",
-      "tags": ["employment", "jobs", "labor market", "wages"]
+      "tags": [
+        "employment",
+        "jobs",
+        "labor market",
+        "wages"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "CB_INSIGHTS_UNICORN",
@@ -1147,7 +1868,19 @@
       "license": "Restricted",
       "format": "Web, Excel",
       "notes": "Number of unicorns by country and city. Scalable company creation is a direct IEPA outcome KPI.",
-      "tags": ["unicorn", "startups", "scale-up", "valuation"]
+      "tags": [
+        "unicorn",
+        "startups",
+        "scale-up",
+        "valuation"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WB_POVERTY",
@@ -1165,7 +1898,19 @@
       "license": "Open",
       "format": "API, Excel",
       "notes": "Poverty headcount ratios and inequality (Gini). Broad prosperity outcome beyond GDP.",
-      "tags": ["poverty", "inequality", "Gini", "inclusive growth"]
+      "tags": [
+        "poverty",
+        "inequality",
+        "Gini",
+        "inclusive growth"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "MPI",
@@ -1183,7 +1928,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Health, education, and living standards deprivations. Captures poverty beyond income. Relevant for emerging market baseline.",
-      "tags": ["poverty", "human development", "deprivation", "inclusion"]
+      "tags": [
+        "poverty",
+        "human development",
+        "deprivation",
+        "inclusion"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "OECD_BETTER_LIFE",
@@ -1201,7 +1958,19 @@
       "license": "Open",
       "format": "Web, API",
       "notes": "11 dimensions: housing, income, jobs, community, education, environment, civic engagement, health, life satisfaction, safety, work-life balance.",
-      "tags": ["wellbeing", "quality of life", "social", "OECD"]
+      "tags": [
+        "wellbeing",
+        "quality of life",
+        "social",
+        "OECD"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WEF_INCLUSIVE_GROWTH",
@@ -1219,7 +1988,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Growth, inclusion, and intergenerational equity pillars. Directly aligned with IE's definition of sustainable prosperity.",
-      "tags": ["inclusive growth", "equity", "wellbeing", "intergenerational"]
+      "tags": [
+        "inclusive growth",
+        "equity",
+        "wellbeing",
+        "intergenerational"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "NATIXIS_RETIREMENT",
@@ -1237,9 +2017,20 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Finances in retirement, material wellbeing, health, and quality of life. Long-term prosperity signal.",
-      "tags": ["retirement", "wellbeing", "social security", "aging"]
+      "tags": [
+        "retirement",
+        "wellbeing",
+        "social security",
+        "aging"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
-
     {
       "id": "UNHCR_DISPLACEMENT",
       "name": "Global Trends: Forced Displacement",
@@ -1256,7 +2047,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Refugees and displaced populations by country. Extreme stability signal for high-risk market analysis.",
-      "tags": ["displacement", "refugees", "stability", "conflict"]
+      "tags": [
+        "displacement",
+        "refugees",
+        "stability",
+        "conflict"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WB_HUMAN_CAPITAL",
@@ -1274,7 +2077,19 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Child survival, expected years of school, harmonized test scores, adult survival, healthy growth. Education-workforce pipeline signal.",
-      "tags": ["human capital", "education", "health", "workforce"]
+      "tags": [
+        "human capital",
+        "education",
+        "health",
+        "workforce"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "QS_RANKINGS",
@@ -1292,7 +2107,19 @@
       "license": "Open",
       "format": "Web, PDF",
       "notes": "Academic reputation, employer reputation, citations, faculty/student ratio, international diversity, sustainability. Talent production proxy.",
-      "tags": ["universities", "education", "research", "talent"]
+      "tags": [
+        "universities",
+        "education",
+        "research",
+        "talent"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "PRESS_FREEDOM",
@@ -1310,7 +2137,19 @@
       "license": "Open",
       "format": "PDF, Web",
       "notes": "Political context, legal framework, economic context, sociocultural context, and safety. Information environment signal.",
-      "tags": ["press freedom", "media", "governance", "civil liberties"]
+      "tags": [
+        "press freedom",
+        "media",
+        "governance",
+        "civil liberties"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "FOOD_SECURITY",
@@ -1328,7 +2167,19 @@
       "license": "Open",
       "format": "Web, Excel",
       "notes": "Affordability, availability, quality and safety, and sustainability. Base resilience layer for emerging markets.",
-      "tags": ["food security", "agriculture", "sustainability", "resilience"]
+      "tags": [
+        "food security",
+        "agriculture",
+        "sustainability",
+        "resilience"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WATER_RISK",
@@ -1346,7 +2197,19 @@
       "license": "Open",
       "format": "Web, API",
       "notes": "Water stress, depletion, variability, and quality. Long-term physical resilience, critical for infrastructure-heavy FDI sectors.",
-      "tags": ["water", "climate risk", "infrastructure", "sustainability"]
+      "tags": [
+        "water",
+        "climate risk",
+        "infrastructure",
+        "sustainability"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GHS_INDEX",
@@ -1364,7 +2227,18 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Prevention, detection, response, health system, norms compliance, risk environment. Post-COVID risk management baseline.",
-      "tags": ["health security", "pandemic", "resilience", "public health"]
+      "tags": [
+        "health security",
+        "pandemic",
+        "resilience",
+        "public health"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "YOUTH_DEV",
@@ -1382,7 +2256,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Education, employment, health, civic participation, and political participation for youth. Long-term human capital pipeline.",
-      "tags": ["youth", "education", "employment", "development"]
+      "tags": [
+        "youth",
+        "education",
+        "employment",
+        "development"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "OPEN_DATA_BAROMETER",
@@ -1400,7 +2286,18 @@
       "license": "Open",
       "format": "Web",
       "notes": "Government data openness, readiness, and implementation impact. Digital governance alignment signal.",
-      "tags": ["open data", "governance", "digital", "transparency"]
+      "tags": [
+        "open data",
+        "governance",
+        "digital",
+        "transparency"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "IMD_WORLD_COMP",
@@ -1418,7 +2315,19 @@
       "license": "Restricted",
       "format": "PDF, Web",
       "notes": "Economic performance, government efficiency, business efficiency, and infrastructure. Comprehensive senior-audience credibility.",
-      "tags": ["competitiveness", "government", "business", "infrastructure"]
+      "tags": [
+        "competitiveness",
+        "government",
+        "business",
+        "infrastructure"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "PISA",
@@ -1436,7 +2345,15 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "Math, reading, and science scores for 15-year-olds. Long-range innovation talent pipeline signal.",
-      "tags": ["education", "PISA", "skills", "talent pipeline"]
+      "tags": [
+        "education",
+        "PISA",
+        "skills",
+        "talent pipeline"
+      ],
+      "data_years": [
+        2022
+      ]
     },
     {
       "id": "TIMSS",
@@ -1454,7 +2371,15 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Math and science achievement at grades 4 and 8. STEM pipeline indicator for future innovation workforce.",
-      "tags": ["education", "STEM", "science", "math"]
+      "tags": [
+        "education",
+        "STEM",
+        "science",
+        "math"
+      ],
+      "data_years": [
+        2023
+      ]
     },
     {
       "id": "INCLUSIVE_INTERNET",
@@ -1472,7 +2397,18 @@
       "license": "Open",
       "format": "PDF, Web",
       "notes": "Availability, affordability, relevance, and readiness pillars. Digital inclusion as innovation baseline.",
-      "tags": ["internet", "digital inclusion", "access", "connectivity"]
+      "tags": [
+        "internet",
+        "digital inclusion",
+        "access",
+        "connectivity"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "IP_INDEX",
@@ -1490,7 +2426,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Patents, copyrights, trademarks, trade secrets, enforcement, international treaties. IP protection critical for innovation commercialization.",
-      "tags": ["IP", "patents", "trademarks", "protection"]
+      "tags": [
+        "IP",
+        "patents",
+        "trademarks",
+        "protection"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "OECD_ENTREPRENEURSHIP",
@@ -1508,7 +2456,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Business creation and destruction rates, enterprise characteristics, growth ambitions, and innovation outputs.",
-      "tags": ["entrepreneurship", "OECD", "business creation", "SME"]
+      "tags": [
+        "entrepreneurship",
+        "OECD",
+        "business creation",
+        "SME"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WEF_TRAVEL_TOURISM",
@@ -1526,7 +2486,18 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Enabling environment, T&T policy, infrastructure, natural and cultural resources. Soft power and FDI attraction signal.",
-      "tags": ["tourism", "soft power", "FDI", "infrastructure"]
+      "tags": [
+        "tourism",
+        "soft power",
+        "FDI",
+        "infrastructure"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "OECD_FDI",
@@ -1543,8 +2514,20 @@
       "data_access": "Free",
       "license": "Open",
       "format": "Excel",
-      "notes": "Foreign equity limits, screening and approval, restrictions on key personnel, and operational restrictions. Inverse signal — lower = more open.",
-      "tags": ["FDI", "restrictions", "openness", "regulatory"]
+      "notes": "Foreign equity limits, screening and approval, restrictions on key personnel, and operational restrictions. Inverse signal \u2014 lower = more open.",
+      "tags": [
+        "FDI",
+        "restrictions",
+        "openness",
+        "regulatory"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GREENFIELD_FDI",
@@ -1562,7 +2545,19 @@
       "license": "Restricted",
       "format": "Web, Excel",
       "notes": "Greenfield project announcements by country, sector, and capital expenditure. Most granular FDI tracking available.",
-      "tags": ["FDI", "greenfield", "investment", "projects"]
+      "tags": [
+        "FDI",
+        "greenfield",
+        "investment",
+        "projects"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "IFC_INVESTMENT_CLIMATE",
@@ -1580,7 +2575,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Country-level investment climate reform assessments. Direct policy advisory intelligence for IE's government clients.",
-      "tags": ["investment climate", "IFC", "reform", "policy"]
+      "tags": [
+        "investment climate",
+        "IFC",
+        "reform",
+        "policy"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "COFACE_RISK",
@@ -1598,7 +2605,19 @@
       "license": "Restricted",
       "format": "PDF",
       "notes": "Country risk (A1-E) and business climate grades. Quick-reference risk signal for corporate clients considering market entry.",
-      "tags": ["country risk", "business climate", "FDI", "credit risk"]
+      "tags": [
+        "country risk",
+        "business climate",
+        "FDI",
+        "credit risk"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "EIU_RISK",
@@ -1616,7 +2635,19 @@
       "license": "Restricted",
       "format": "PDF, API",
       "notes": "Sovereign, currency, banking, political, economic structure, and country risk scores. Premium signal for enterprise FDI advisory.",
-      "tags": ["country risk", "sovereign risk", "political risk", "FDI"]
+      "tags": [
+        "country risk",
+        "sovereign risk",
+        "political risk",
+        "FDI"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WIPO_PCT",
@@ -1634,7 +2665,19 @@
       "license": "Open",
       "format": "Excel, API",
       "notes": "International patent applications filed under PCT. High-quality innovation commercialization signal.",
-      "tags": ["patents", "PCT", "innovation", "IP"]
+      "tags": [
+        "patents",
+        "PCT",
+        "innovation",
+        "IP"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "IMF_FSI",
@@ -1652,7 +2695,19 @@
       "license": "Open",
       "format": "API, Excel",
       "notes": "Bank capital adequacy, asset quality, earnings, liquidity. Financial system resilience signal.",
-      "tags": ["financial stability", "banking", "systemic risk", "resilience"]
+      "tags": [
+        "financial stability",
+        "banking",
+        "systemic risk",
+        "resilience"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WB_GOVERNANCE",
@@ -1664,13 +2719,24 @@
       "country_coverage": 214,
       "iepa_zone": "Foundations",
       "iepa_factor": "Alignment",
-      "iepa_weight": 0.10,
+      "iepa_weight": 0.1,
       "tier": "Primary",
       "data_access": "Free",
       "license": "Open",
       "format": "Excel, API",
       "notes": "Full WGI composite across voice & accountability, political stability, government effectiveness, regulatory quality, rule of law, control of corruption.",
-      "tags": ["governance", "World Bank", "WGI", "institutions"]
+      "tags": [
+        "governance",
+        "World Bank",
+        "WGI",
+        "institutions"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "OECD_DIGITAL_GOV",
@@ -1688,7 +2754,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Digital by design, data-driven public sector, government as a platform, open by default, user-driven, proactiveness. Gov-tech alignment indicator.",
-      "tags": ["digital government", "e-government", "governance", "public sector"]
+      "tags": [
+        "digital government",
+        "e-government",
+        "governance",
+        "public sector"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WEF_IE_ECOSYSTEMS",
@@ -1706,7 +2783,17 @@
       "license": "Open",
       "format": "PDF",
       "notes": "WEF's own innovation ecosystem framework across policy, talent, capital, and infrastructure dimensions. Direct comp to IE methodology.",
-      "tags": ["ecosystems", "WEF", "innovation", "policy"]
+      "tags": [
+        "ecosystems",
+        "WEF",
+        "innovation",
+        "policy"
+      ],
+      "data_years": [
+        2023,
+        2024,
+        2025
+      ]
     },
     {
       "id": "OECD_STARTUP_POLICY",
@@ -1724,7 +2811,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Startup policy frameworks across regulatory simplification, access to finance, markets, awareness and capabilities, and international linkages.",
-      "tags": ["startup policy", "OECD", "regulatory", "government"]
+      "tags": [
+        "startup policy",
+        "OECD",
+        "regulatory",
+        "government"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GLOBAL_GENDER_GAP",
@@ -1742,7 +2841,19 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Economic participation, educational attainment, health, and political empowerment gender parity. Inclusive ecosystem signal.",
-      "tags": ["gender", "equality", "inclusion", "workforce"]
+      "tags": [
+        "gender",
+        "equality",
+        "inclusion",
+        "workforce"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "GLOBAL_COMPETITIVENESS_4IR",
@@ -1760,7 +2871,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Technology and innovation, human capital, global trade and investment, institutional framework, sustainable resources, demand environment.",
-      "tags": ["4IR", "production", "technology", "future of work"]
+      "tags": [
+        "4IR",
+        "production",
+        "technology",
+        "future of work"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "UN_EGOVERNMENT",
@@ -1778,7 +2900,17 @@
       "license": "Open",
       "format": "PDF, Excel",
       "notes": "Online service index, telecom infrastructure index, human capital index. Broadest government digital service coverage globally.",
-      "tags": ["e-government", "digital services", "governance", "UN"]
+      "tags": [
+        "e-government",
+        "digital services",
+        "governance",
+        "UN"
+      ],
+      "data_years": [
+        2020,
+        2022,
+        2024
+      ]
     },
     {
       "id": "GFSI_INVESTMENT",
@@ -1796,7 +2928,19 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Sustainable investment framework alignment. ESG-aligned FDI signal increasingly demanded by sovereign wealth funds.",
-      "tags": ["sustainable investment", "ESG", "FDI", "sustainability"]
+      "tags": [
+        "sustainable investment",
+        "ESG",
+        "FDI",
+        "sustainability"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "WB_DOING_BUSINESS_ARCHIVE",
@@ -1814,7 +2958,15 @@
       "license": "Open",
       "format": "Excel",
       "notes": "Historical longitudinal data pre-2021. Valuable for backtesting IEPA algorithm against historical ecosystem development trajectories.",
-      "tags": ["doing business", "historical", "regulatory", "longitudinal"]
+      "tags": [
+        "doing business",
+        "historical",
+        "regulatory",
+        "longitudinal"
+      ],
+      "data_years": [
+        2020
+      ]
     },
     {
       "id": "MSCI_ESG",
@@ -1832,7 +2984,19 @@
       "license": "Restricted",
       "format": "API",
       "notes": "Environmental, social, governance scores used by institutional investors. Increasingly drives FDI capital allocation.",
-      "tags": ["ESG", "investment", "institutional", "sustainability"]
+      "tags": [
+        "ESG",
+        "investment",
+        "institutional",
+        "sustainability"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "HERITAGE_INVESTMENT_FREEDOM",
@@ -1850,7 +3014,19 @@
       "license": "Open",
       "format": "Excel, Web",
       "notes": "Sub-component of Economic Freedom Index. Capital flows, foreign investment code, restrictions, expropriation, and foreign exchange.",
-      "tags": ["investment freedom", "capital flows", "FDI", "regulation"]
+      "tags": [
+        "investment freedom",
+        "capital flows",
+        "FDI",
+        "regulation"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "BSA_CLOUD",
@@ -1868,7 +3044,18 @@
       "license": "Open",
       "format": "PDF",
       "notes": "IT readiness, legal framework, data privacy, cybersecurity, cloud promotion policies. Digital infrastructure readiness.",
-      "tags": ["cloud", "digital", "data privacy", "infrastructure"]
+      "tags": [
+        "cloud",
+        "digital",
+        "data privacy",
+        "infrastructure"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
     },
     {
       "id": "OECD_PMR",
@@ -1886,7 +3073,19 @@
       "license": "Open",
       "format": "Excel",
       "notes": "State control, barriers to entrepreneurship, and barriers to trade and investment. Deep regulatory alignment structural signal.",
-      "tags": ["regulation", "product market", "competition", "OECD"]
+      "tags": [
+        "regulation",
+        "product market",
+        "competition",
+        "OECD"
+      ],
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
     },
     {
       "id": "UN_INNOVATION_AGENCY",
@@ -1904,8 +3103,1717 @@
       "license": "Open",
       "format": "PDF",
       "notes": "Frontier technologies and their impact on developing countries. UNCTAD Readiness Index sub-component. Emerging market tech gap analysis.",
-      "tags": ["technology", "emerging markets", "frontier tech", "UNCTAD"]
+      "tags": [
+        "technology",
+        "emerging markets",
+        "frontier tech",
+        "UNCTAD"
+      ],
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "id": "STANFORD_AI_INDEX",
+      "name": "Stanford AI Index Report",
+      "publisher": "Stanford HAI",
+      "url": "https://aiindex.stanford.edu/report/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 60,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.1,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Comprehensive AI progress metrics: research output, R&D investment, talent, policy. Key benchmark for AI ecosystem maturity.",
+      "tags": [
+        "AI",
+        "machine learning",
+        "R&D",
+        "talent",
+        "policy"
+      ]
+    },
+    {
+      "id": "TORTOISE_AI",
+      "name": "Global AI Index",
+      "publisher": "Tortoise Intelligence",
+      "url": "https://www.tortoisemedia.com/intelligence/global-ai/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 62,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.08,
+      "tier": "Secondary",
+      "data_access": "Free (summary) / Paid",
+      "license": "Restricted",
+      "format": "Web, PDF",
+      "data_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Measures AI implementation, innovation, and investment across 62 countries. Strong emerging market coverage.",
+      "tags": [
+        "AI",
+        "innovation",
+        "investment",
+        "talent"
+      ]
+    },
+    {
+      "id": "OECD_STI",
+      "name": "OECD Science, Technology and Innovation Outlook",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/sti/oecd-science-technology-and-innovation-outlook-25186167.htm",
+      "frequency": "Biennial",
+      "latest_year": 2023,
+      "country_coverage": 70,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2020,
+        2022
+      ],
+      "notes": "Deep dive into STI policy trends, megatrends, and national innovation system benchmarks. Biennial.",
+      "tags": [
+        "STI",
+        "policy",
+        "R&D",
+        "innovation systems"
+      ]
+    },
+    {
+      "id": "WIPO_TECH_TRENDS",
+      "name": "WIPO Technology Trends",
+      "publisher": "WIPO",
+      "url": "https://www.wipo.int/tech_trends/en/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 120,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Tracks emerging technology patent trends by country. AI, blockchain, climate tech coverage.",
+      "tags": [
+        "patents",
+        "technology",
+        "AI",
+        "climate tech"
+      ]
+    },
+    {
+      "id": "SCIENTIFIC_PRODUCTION",
+      "name": "SCImago Journal & Country Rank",
+      "publisher": "SCImago Research Group",
+      "url": "https://www.scimagojr.com/countryrank.php",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 239,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Scientific output and citation impact by country. Key proxy for research capacity and knowledge production.",
+      "tags": [
+        "research",
+        "publications",
+        "citations",
+        "academia"
+      ]
+    },
+    {
+      "id": "ITU_DIGITAL_DEV",
+      "name": "Digital Development Dashboard",
+      "publisher": "ITU",
+      "url": "https://www.itu.int/en/ITU-D/Statistics/Dashboards/Pages/Digital-Development.aspx",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 193,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.06,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Broadband penetration, mobile subscriptions, internet access. Successor metrics to ICT Development Index.",
+      "tags": [
+        "digital",
+        "broadband",
+        "mobile",
+        "internet access"
+      ]
+    },
+    {
+      "id": "WEF_FUTURE_JOBS",
+      "name": "Future of Jobs Report",
+      "publisher": "World Economic Forum",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/",
+      "frequency": "Biennial",
+      "latest_year": 2025,
+      "country_coverage": 55,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2023,
+        2025
+      ],
+      "notes": "Forecasts skill transitions, automation exposure, and future workforce needs by industry and country.",
+      "tags": [
+        "future of work",
+        "skills",
+        "automation",
+        "workforce"
+      ]
+    },
+    {
+      "id": "OECD_EDUCATION",
+      "name": "Education at a Glance",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/education/education-at-a-glance/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 48,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Innovation Capacity",
+      "iepa_weight": 0.06,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Tertiary attainment, STEM graduation rates, public education spending. Critical for talent pipeline assessment.",
+      "tags": [
+        "education",
+        "STEM",
+        "tertiary",
+        "talent pipeline"
+      ]
+    },
+    {
+      "id": "GSER_EXTENDED",
+      "name": "Global Startup Ecosystem Report \u2014 Emerging Markets Supplement",
+      "publisher": "Startup Genome",
+      "url": "https://startupgenome.com/report/gser2024",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 100,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.1,
+      "tier": "Primary",
+      "data_access": "Free (summary) / Paid",
+      "license": "Restricted",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Top 30 global ecosystems plus emerging hubs. Funding, exits, talent, connectedness metrics.",
+      "tags": [
+        "startup ecosystems",
+        "funding",
+        "exits",
+        "talent",
+        "emerging markets"
+      ]
+    },
+    {
+      "id": "CRUNCHBASE_EMERGING",
+      "name": "Crunchbase Emerging Market Startup Activity",
+      "publisher": "Crunchbase",
+      "url": "https://www.crunchbase.com/",
+      "frequency": "Quarterly/Annual",
+      "latest_year": 2024,
+      "country_coverage": 195,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Paid",
+      "license": "Commercial",
+      "format": "API, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Company formation, funding rounds, investor activity by country. Most granular startup data source globally.",
+      "tags": [
+        "startups",
+        "funding",
+        "venture capital",
+        "unicorns"
+      ]
+    },
+    {
+      "id": "PITCHBOOK_EM",
+      "name": "PitchBook Emerging Market VC Report",
+      "publisher": "PitchBook",
+      "url": "https://pitchbook.com/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 80,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.08,
+      "tier": "Secondary",
+      "data_access": "Paid",
+      "license": "Commercial",
+      "format": "PDF, API",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "VC investment flows, deal counts, exit activity. Complements Crunchbase for cross-validation.",
+      "tags": [
+        "venture capital",
+        "private equity",
+        "exits",
+        "deal flow"
+      ]
+    },
+    {
+      "id": "GSBI",
+      "name": "Global Social Business Initiative Index",
+      "publisher": "Yunus Social Business",
+      "url": "https://www.yunussb.com/",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 45,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.05,
+      "tier": "Tertiary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Social enterprise activity and impact investing environment. Relevant for inclusive innovation measurement.",
+      "tags": [
+        "social enterprise",
+        "impact",
+        "inclusive innovation"
+      ]
+    },
+    {
+      "id": "OECD_FINANCING_SMES",
+      "name": "Financing SMEs and Entrepreneurs Scoreboard",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/cfe/smes/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 48,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "SME access to credit, equity, and alternative finance. Key proxy for entrepreneurship enabling environment.",
+      "tags": [
+        "SME",
+        "finance",
+        "access to credit",
+        "equity"
+      ]
+    },
+    {
+      "id": "MSME_FINANCE_GAP",
+      "name": "MSME Finance Gap Report",
+      "publisher": "IFC / World Bank",
+      "url": "https://www.smefinanceforum.org/data-sites/msme-finance-gap",
+      "frequency": "Biennial",
+      "latest_year": 2024,
+      "country_coverage": 128,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2020,
+        2022,
+        2024
+      ],
+      "notes": "Estimates unmet MSME finance needs by country. Critical for understanding entrepreneurship barriers in emerging markets.",
+      "tags": [
+        "MSME",
+        "finance gap",
+        "emerging markets",
+        "access to finance"
+      ]
+    },
+    {
+      "id": "TECHCRUNCH_EM_TRACKER",
+      "name": "AfricArena / Disrupt Africa / Tech In Asia Ecosystem Trackers",
+      "publisher": "Regional Tech Media",
+      "url": "https://disrupt-africa.com/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 30,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.05,
+      "tier": "Tertiary",
+      "data_access": "Free (partial) / Paid",
+      "license": "Restricted",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Regional startup trackers for Africa and Southeast Asia. Complements global indices with ground-level data.",
+      "tags": [
+        "Africa",
+        "Southeast Asia",
+        "startups",
+        "regional"
+      ]
+    },
+    {
+      "id": "WB_ENTERPRISE_SURVEY",
+      "name": "World Bank Enterprise Surveys",
+      "publisher": "World Bank Group",
+      "url": "https://www.enterprisesurveys.org/",
+      "frequency": "Irregular",
+      "latest_year": 2024,
+      "country_coverage": 148,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Entrepreneurship Capacity",
+      "iepa_weight": 0.09,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "CSV, API",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Firm-level survey data on business climate obstacles: access to finance, corruption, infrastructure, regulation.",
+      "tags": [
+        "enterprise",
+        "business climate",
+        "private sector",
+        "firm-level data"
+      ]
+    },
+    {
+      "id": "ND_GAIN",
+      "name": "Notre Dame Global Adaptation Initiative Country Index",
+      "publisher": "University of Notre Dame",
+      "url": "https://gain.nd.edu/our-work/country-index/",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 185,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "CSV, Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Dual measure: climate vulnerability (6 sectors) and readiness (economic, governance, social). Essential for resilience factor.",
+      "tags": [
+        "climate",
+        "adaptation",
+        "vulnerability",
+        "resilience"
+      ]
+    },
+    {
+      "id": "INFORM_RISK",
+      "name": "INFORM Risk Index",
+      "publisher": "EU Joint Research Centre / OCHA",
+      "url": "https://drmkc.jrc.ec.europa.eu/inform-index",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 191,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Composite humanitarian risk: hazard/exposure, vulnerability, coping capacity. Used by UN agencies.",
+      "tags": [
+        "humanitarian risk",
+        "disaster risk",
+        "coping capacity",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "WHO_HEALTH",
+      "name": "WHO World Health Statistics",
+      "publisher": "World Health Organization",
+      "url": "https://www.who.int/data/gho/publications/world-health-statistics",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 194,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Life expectancy, health system coverage, UHC index, mortality rates. Foundational resilience health metrics.",
+      "tags": [
+        "health",
+        "UHC",
+        "life expectancy",
+        "mortality"
+      ]
+    },
+    {
+      "id": "WORLD_RISK_INDEX",
+      "name": "World Risk Index",
+      "publisher": "B\u00fcndnis Entwicklung Hilft / Ruhr University Bochum",
+      "url": "https://weltrisikobericht.de/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 193,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Excel",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Disaster risk index combining exposure to natural hazards with societal vulnerability and coping capacity.",
+      "tags": [
+        "disaster risk",
+        "natural hazards",
+        "vulnerability",
+        "coping"
+      ]
+    },
+    {
+      "id": "CLIMATE_CHANGE_PERF",
+      "name": "Climate Change Performance Index",
+      "publisher": "Germanwatch / NewClimate Institute / CAN",
+      "url": "https://ccpi.org/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 63,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "GHG emissions, renewable energy, energy efficiency, climate policy. Key for green economy readiness assessment.",
+      "tags": [
+        "climate",
+        "GHG emissions",
+        "renewable energy",
+        "climate policy"
+      ]
+    },
+    {
+      "id": "IEP_ECOLOGICAL",
+      "name": "Ecological Threat Report",
+      "publisher": "Institute for Economics and Peace",
+      "url": "https://www.economicsandpeace.org/research/ecological-threat-report/",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 173,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Ecological threats (food insecurity, water stress, natural disasters) combined with peace/resilience capacity.",
+      "tags": [
+        "ecology",
+        "food security",
+        "water stress",
+        "peace"
+      ]
+    },
+    {
+      "id": "SOCIAL_MOBILITY",
+      "name": "Global Social Mobility Index",
+      "publisher": "World Economic Forum",
+      "url": "https://www.weforum.org/reports/global-social-mobility-report-2020",
+      "frequency": "Biennial",
+      "latest_year": 2020,
+      "country_coverage": 82,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020
+      ],
+      "notes": "5 pillars: health, education, technology access, work opportunities, working conditions, fair wages, social protection.",
+      "tags": [
+        "social mobility",
+        "inequality",
+        "opportunity",
+        "inclusion"
+      ]
+    },
+    {
+      "id": "HOUSEHOLD_INCOME",
+      "name": "World Inequality Database",
+      "publisher": "WID.world",
+      "url": "https://wid.world/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 100,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.06,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Income and wealth inequality data including pre/post-tax distributions. Critical for inclusive growth assessment.",
+      "tags": [
+        "inequality",
+        "income distribution",
+        "wealth",
+        "inclusion"
+      ]
+    },
+    {
+      "id": "PENSION_ADEQUACY",
+      "name": "Melbourne Mercer Global Pension Index",
+      "publisher": "Mercer / CFA Institute",
+      "url": "https://www.mercer.com/our-thinking/mmgpi.html",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 48,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.05,
+      "tier": "Tertiary",
+      "data_access": "Free (summary)",
+      "license": "Restricted",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Pension system adequacy, sustainability, integrity. Proxy for long-term social resilience and workforce security.",
+      "tags": [
+        "pension",
+        "retirement",
+        "social security",
+        "ageing"
+      ]
+    },
+    {
+      "id": "LANCET_BURDEN",
+      "name": "Global Burden of Disease Study",
+      "publisher": "IHME / The Lancet",
+      "url": "https://www.healthdata.org/research-analysis/gbd",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 204,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Resilience",
+      "iepa_weight": 0.06,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web, CSV, API",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Disease burden, mortality, disability-adjusted life years (DALYs) by country. Most comprehensive global health dataset.",
+      "tags": [
+        "health",
+        "disease burden",
+        "mortality",
+        "DALYs"
+      ]
+    },
+    {
+      "id": "WGI_VOICE_ACC",
+      "name": "Voice & Accountability (WGI)",
+      "publisher": "World Bank",
+      "url": "https://info.worldbank.org/governance/wgi/",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 214,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Perceptions of citizen participation in government, freedom of expression, media freedom.",
+      "tags": [
+        "governance",
+        "accountability",
+        "democracy",
+        "civil liberties"
+      ]
+    },
+    {
+      "id": "WGI_POLITICAL_STABILITY",
+      "name": "Political Stability & Absence of Violence (WGI)",
+      "publisher": "World Bank",
+      "url": "https://info.worldbank.org/governance/wgi/",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 214,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Probability of politically motivated violence or government destabilization. Critical for investment environment.",
+      "tags": [
+        "political stability",
+        "governance",
+        "security",
+        "investment climate"
+      ]
+    },
+    {
+      "id": "WGI_CONTROL_CORRUPTION",
+      "name": "Control of Corruption (WGI)",
+      "publisher": "World Bank",
+      "url": "https://info.worldbank.org/governance/wgi/",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 214,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Extent to which public power is exercised for private gain. Complements CPI with World Bank methodology.",
+      "tags": [
+        "corruption",
+        "governance",
+        "rule of law",
+        "public sector"
+      ]
+    },
+    {
+      "id": "OECD_GOVATAGLANCE",
+      "name": "Government at a Glance",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/government/government-at-a-glance-22214399.htm",
+      "frequency": "Biennial",
+      "latest_year": 2023,
+      "country_coverage": 50,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2021,
+        2023
+      ],
+      "notes": "Public sector workforce, budget transparency, digital government, regulatory quality across OECD + partner countries.",
+      "tags": [
+        "public sector",
+        "governance",
+        "budget",
+        "regulation"
+      ]
+    },
+    {
+      "id": "GLOBAL_INTEGRITY",
+      "name": "Government Defence Integrity Index",
+      "publisher": "Transparency International",
+      "url": "https://ti-defence.org/gdi/",
+      "frequency": "Biennial",
+      "latest_year": 2022,
+      "country_coverage": 86,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.05,
+      "tier": "Tertiary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web, PDF",
+      "data_years": [
+        2020,
+        2022
+      ],
+      "notes": "Defence sector governance integrity. Relevant for IE markets with high defense spending.",
+      "tags": [
+        "integrity",
+        "defence",
+        "transparency",
+        "governance"
+      ]
+    },
+    {
+      "id": "BUDGET_TRANSPARENCY",
+      "name": "Open Budget Index",
+      "publisher": "International Budget Partnership",
+      "url": "https://internationalbudget.org/open-budget-survey/",
+      "frequency": "Biennial",
+      "latest_year": 2023,
+      "country_coverage": 120,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Web",
+      "data_years": [
+        2021,
+        2023
+      ],
+      "notes": "Budget transparency, public participation, independent oversight. Aligned with Alignment factor governance sub-components.",
+      "tags": [
+        "budget",
+        "transparency",
+        "accountability",
+        "fiscal"
+      ]
+    },
+    {
+      "id": "OECD_REGULATORY",
+      "name": "OECD Regulatory Policy Outlook",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/gov/regulatory-policy/",
+      "frequency": "Biennial",
+      "latest_year": 2023,
+      "country_coverage": 48,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2021,
+        2023
+      ],
+      "notes": "Regulatory governance, impact assessment, stakeholder engagement, international regulatory cooperation.",
+      "tags": [
+        "regulation",
+        "policy quality",
+        "governance",
+        "impact assessment"
+      ]
+    },
+    {
+      "id": "UN_PUBLIC_SECTOR",
+      "name": "UN Public Administration Country Studies",
+      "publisher": "UNDESA",
+      "url": "https://www.un.org/en/desa/public-administration",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 193,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.05,
+      "tier": "Tertiary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Country-level public administration reforms, capacity building, institutional frameworks.",
+      "tags": [
+        "public administration",
+        "governance",
+        "institutional reform",
+        "capacity building"
+      ]
+    },
+    {
+      "id": "IBA_RULE_OF_LAW",
+      "name": "Rule of Law Index",
+      "publisher": "World Justice Project",
+      "url": "https://worldjusticeproject.org/rule-of-law-index/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 142,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "8 factors: constraints on government, absence of corruption, open government, fundamental rights, order and security, regulatory enforcement, civil justice, criminal justice.",
+      "tags": [
+        "rule of law",
+        "justice",
+        "governance",
+        "accountability"
+      ]
+    },
+    {
+      "id": "EIU_DEMOCRACY_PLUS",
+      "name": "Governance Matters Report",
+      "publisher": "Mo Ibrahim Foundation",
+      "url": "https://mo.ibrahim.foundation/iiag",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 54,
+      "iepa_zone": "Foundations",
+      "iepa_factor": "Alignment",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Web, Data",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Ibrahim Index of African Governance (IIAG). Most comprehensive African governance dataset \u2014 critical for Kenya, Morocco, Egypt.",
+      "tags": [
+        "Africa",
+        "governance",
+        "safety",
+        "rule of law",
+        "human development"
+      ]
+    },
+    {
+      "id": "UNCTAD_FDI_INFLOWS",
+      "name": "UNCTAD FDI Inflows by Country",
+      "publisher": "UNCTAD",
+      "url": "https://unctad.org/topic/investment/world-investment-report",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 200,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.12,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Raw FDI inflow/outflow data by country. Most authoritative global FDI statistical series.",
+      "tags": [
+        "FDI",
+        "investment flows",
+        "inflows",
+        "outflows"
+      ]
+    },
+    {
+      "id": "UNCTAD_INVESTMENT_MONITOR",
+      "name": "UNCTAD Investment Monitor",
+      "publisher": "UNCTAD",
+      "url": "https://investmentpolicy.unctad.org/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 200,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web, PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Investment policy developments, BIT/FTA activity, investment promotion measures by country.",
+      "tags": [
+        "investment policy",
+        "BIT",
+        "FTA",
+        "investment promotion"
+      ]
+    },
+    {
+      "id": "FDI_INTELLIGENCE",
+      "name": "fDi Intelligence Global FDI Trends Report",
+      "publisher": "Financial Times fDi Intelligence",
+      "url": "https://www.fdiintelligence.com/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 150,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Paid",
+      "license": "Commercial",
+      "format": "PDF, Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Greenfield FDI project tracking, sector breakdown, investment motives. Granular FT dataset.",
+      "tags": [
+        "greenfield FDI",
+        "investment projects",
+        "sectors",
+        "location attractiveness"
+      ]
+    },
+    {
+      "id": "WB_BUSINESS_CLIMATE",
+      "name": "World Bank B-READY Business Climate Assessment",
+      "publisher": "World Bank Group",
+      "url": "https://www.worldbank.org/en/programs/business-ready",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 184,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.09,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web, PDF",
+      "data_years": [
+        2024
+      ],
+      "notes": "Successor to Doing Business. 10 topics covering business entry, location, utilities, labor, finance, dispute resolution, trade, taxation, market competition, business insolvency.",
+      "tags": [
+        "business climate",
+        "regulation",
+        "trade",
+        "taxation"
+      ]
+    },
+    {
+      "id": "OECD_TRADE_FACILITATION",
+      "name": "OECD Trade Facilitation Indicators",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/trade/topics/trade-facilitation/",
+      "frequency": "Biennial",
+      "latest_year": 2023,
+      "country_coverage": 163,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, Web",
+      "data_years": [
+        2020,
+        2022
+      ],
+      "notes": "Border procedures, document/time/cost measures, automated customs. Key for market access assessment.",
+      "tags": [
+        "trade facilitation",
+        "customs",
+        "border procedures",
+        "market access"
+      ]
+    },
+    {
+      "id": "WTO_TRADE_POLICY",
+      "name": "WTO Trade Policy Reviews",
+      "publisher": "World Trade Organization",
+      "url": "https://www.wto.org/english/tratop_e/tpr_e/tpr_e.htm",
+      "frequency": "Country-specific",
+      "latest_year": 2024,
+      "country_coverage": 164,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Comprehensive review of each country's trade policies and practices. Useful for tariff/NTB analysis.",
+      "tags": [
+        "trade policy",
+        "tariffs",
+        "market access",
+        "WTO"
+      ]
+    },
+    {
+      "id": "IPA_BENCHMARKING",
+      "name": "Investment Promotion Agency Benchmarking",
+      "publisher": "UNCTAD / WAIPA",
+      "url": "https://unctad.org/system/files/official-document/diaeia2012d23_en.pdf",
+      "frequency": "Biennial",
+      "latest_year": 2023,
+      "country_coverage": 95,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2022
+      ],
+      "notes": "IPA capacity, services, digital capabilities, aftercare programs. Key for IE advisory clients with IPA mandates.",
+      "tags": [
+        "IPA",
+        "investment promotion",
+        "aftercare",
+        "FDI attraction"
+      ]
+    },
+    {
+      "id": "GLOBAL_FINANCE_FDI",
+      "name": "Global Finance Country Risk Ratings",
+      "publisher": "Global Finance Magazine",
+      "url": "https://www.gfmag.com/global-data/country-data/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 185,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.05,
+      "tier": "Tertiary",
+      "data_access": "Free (partial)",
+      "license": "Restricted",
+      "format": "Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Country risk ratings used by banking sector. Currency risk, economic risk, political risk, banking risk.",
+      "tags": [
+        "country risk",
+        "investment risk",
+        "banking",
+        "currency"
+      ]
+    },
+    {
+      "id": "MOODY_SOVEREIGN",
+      "name": "Moody's Sovereign Credit Ratings",
+      "publisher": "Moody's Ratings",
+      "url": "https://www.moodys.com/research/ratings-and-research",
+      "frequency": "Continuous",
+      "latest_year": 2024,
+      "country_coverage": 140,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free (public ratings)",
+      "license": "Restricted",
+      "format": "Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Sovereign credit ratings. Investment grade vs speculative distinction directly affects FDI attractiveness.",
+      "tags": [
+        "sovereign credit",
+        "credit ratings",
+        "investment grade",
+        "risk"
+      ]
+    },
+    {
+      "id": "SP_SOVEREIGN",
+      "name": "S&P Global Sovereign Ratings",
+      "publisher": "S&P Global Ratings",
+      "url": "https://www.spglobal.com/ratings/en/",
+      "frequency": "Continuous",
+      "latest_year": 2024,
+      "country_coverage": 130,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free (public ratings)",
+      "license": "Restricted",
+      "format": "Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Sovereign credit ratings complementing Moody's. Cross-validate for FDI risk assessment.",
+      "tags": [
+        "sovereign credit",
+        "credit ratings",
+        "risk",
+        "capital markets"
+      ]
+    },
+    {
+      "id": "IMF_ARTICLE_IV",
+      "name": "IMF Article IV Consultation Reports",
+      "publisher": "International Monetary Fund",
+      "url": "https://www.imf.org/en/Publications/SPROLLs/Article-IV-Staff-Reports",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 190,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.06,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Annual IMF bilateral surveillance. Macro outlook, policy recommendations, external sector assessment.",
+      "tags": [
+        "IMF",
+        "macro",
+        "fiscal",
+        "monetary policy",
+        "surveillance"
+      ]
+    },
+    {
+      "id": "REGIONAL_DEVELOPMENT_BANK_FDI",
+      "name": "MDB Investment Climate Assessments",
+      "publisher": "ADB / AfDB / IDB / EBRD",
+      "url": "https://www.adb.org/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 100,
+      "iepa_zone": "Engine",
+      "iepa_factor": "FDI Accelerator",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Investment climate reports from regional development banks. ADB for Southeast Asia, AfDB for Africa, EBRD for Turkey.",
+      "tags": [
+        "MDB",
+        "investment climate",
+        "regional development",
+        "capacity"
+      ]
+    },
+    {
+      "id": "IMF_WEO_EXTENDED",
+      "name": "IMF World Economic Outlook Database",
+      "publisher": "IMF",
+      "url": "https://www.imf.org/en/Publications/WEO",
+      "frequency": "Biennial",
+      "latest_year": 2024,
+      "country_coverage": 196,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.12,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "GDP per capita, real growth, inflation, unemployment, current account. Most authoritative macro outcome data.",
+      "tags": [
+        "GDP",
+        "growth",
+        "inflation",
+        "unemployment",
+        "macro outcomes"
+      ]
+    },
+    {
+      "id": "WB_NATIONAL_ACCOUNTS",
+      "name": "World Bank National Accounts Data",
+      "publisher": "World Bank",
+      "url": "https://data.worldbank.org/topic/economy-and-growth",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 217,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.1,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "CSV, API",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "GDP growth, GNI per capita, gross capital formation, trade ratios. Cross-validates IMF WEO data.",
+      "tags": [
+        "GDP",
+        "GNI",
+        "national accounts",
+        "capital formation"
+      ]
+    },
+    {
+      "id": "ILO_LABOUR_EXTENDED",
+      "name": "ILO ILOSTAT Labour Market Database",
+      "publisher": "International Labour Organization",
+      "url": "https://ilostat.ilo.org/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 189,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.09,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "CSV, API",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Employment by sector, wages, labor productivity, youth unemployment. Job creation outcome tracking.",
+      "tags": [
+        "employment",
+        "wages",
+        "productivity",
+        "labor market",
+        "youth unemployment"
+      ]
+    },
+    {
+      "id": "CB_INSIGHTS_UNICORN_TRACKER",
+      "name": "CB Insights State of Venture Report",
+      "publisher": "CB Insights",
+      "url": "https://www.cbinsights.com/research/report/venture-trends/",
+      "frequency": "Quarterly",
+      "latest_year": 2024,
+      "country_coverage": 75,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free (summary) / Paid",
+      "license": "Restricted",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Unicorn creation rate, VC investment, exits by country. Direct measure of scalable company creation.",
+      "tags": [
+        "unicorns",
+        "venture capital",
+        "exits",
+        "scalable companies"
+      ]
+    },
+    {
+      "id": "GEDI_ECOSYSTEM_VALUE",
+      "name": "Global Ecosystem Value Report",
+      "publisher": "Startup Genome",
+      "url": "https://startupgenome.com/reports/global-startup-ecosystem-report-2024",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 50,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.07,
+      "tier": "Secondary",
+      "data_access": "Free (partial)",
+      "license": "Restricted",
+      "format": "PDF",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Total ecosystem value created (exits + unicorn valuations). Direct outcome measure for IE's scalable company KPI.",
+      "tags": [
+        "ecosystem value",
+        "exits",
+        "startup valuation",
+        "economic impact"
+      ]
+    },
+    {
+      "id": "OECD_PRODUCTIVITY",
+      "name": "OECD Productivity Statistics",
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/productivity/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 50,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.08,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Labour productivity, multifactor productivity, unit labor costs. Key for sustainable economic development outcomes.",
+      "tags": [
+        "productivity",
+        "labor productivity",
+        "TFP",
+        "competitiveness"
+      ]
+    },
+    {
+      "id": "HAPPY_PLANET",
+      "name": "World Happiness Report",
+      "publisher": "Sustainable Development Solutions Network",
+      "url": "https://worldhappiness.report/",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 137,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.06,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, CSV",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Life evaluation (Cantril ladder), positive affect, social support. Wellbeing dimension of prosperity.",
+      "tags": [
+        "happiness",
+        "wellbeing",
+        "life satisfaction",
+        "social support"
+      ]
+    },
+    {
+      "id": "WB_REMITTANCES",
+      "name": "World Bank Remittance Data",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues/brief/migration-remittances-data",
+      "frequency": "Annual",
+      "latest_year": 2024,
+      "country_coverage": 210,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.05,
+      "tier": "Secondary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Excel",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "notes": "Inbound remittances as % of GDP. Diaspora capital flows \u2014 significant in Philippines, Morocco, Egypt, India.",
+      "tags": [
+        "remittances",
+        "diaspora",
+        "capital flows",
+        "household income"
+      ]
+    },
+    {
+      "id": "OECD_DOMESTIC_PRODUCT_PCT",
+      "name": "OECD Regional Well-being Framework",
+      "publisher": "OECD",
+      "url": "https://www.oecdregionalwellbeing.org/",
+      "frequency": "Annual",
+      "latest_year": 2023,
+      "country_coverage": 40,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.05,
+      "tier": "Tertiary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "Web",
+      "data_years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "notes": "Sub-national wellbeing data: income, jobs, health, education, safety, civic engagement, housing, environment.",
+      "tags": [
+        "regional wellbeing",
+        "sub-national",
+        "quality of life",
+        "civic engagement"
+      ]
+    },
+    {
+      "id": "WB_POVERTY_TRACKER",
+      "name": "World Bank Poverty & Shared Prosperity Report",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/publication/poverty-and-shared-prosperity",
+      "frequency": "Biennial",
+      "latest_year": 2024,
+      "country_coverage": 170,
+      "iepa_zone": "Outcomes",
+      "iepa_factor": "Prosperity Outcomes",
+      "iepa_weight": 0.07,
+      "tier": "Primary",
+      "data_access": "Free",
+      "license": "Open",
+      "format": "PDF, Data",
+      "data_years": [
+        2020,
+        2022,
+        2024
+      ],
+      "notes": "Global extreme poverty rates, shared prosperity (bottom 40% income growth). Flagship World Bank poverty assessment.",
+      "tags": [
+        "poverty",
+        "inequality",
+        "shared prosperity",
+        "bottom 40%"
+      ]
     }
-
   ]
 }
