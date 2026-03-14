@@ -1,14 +1,15 @@
 {
   "meta": {
     "name": "Innovative EcoSystems Index Registry",
-    "version": "2.0.0",
-    "last_updated": "2026-03-11",
+    "version": "2.1.0",
+    "last_updated": "2026-03-14",
     "total_indices": 163,
     "owner": "Innovative EcoSystems",
     "github": "https://github.com/CommunityEngineApp/ie_index_registry",
     "description": "Master registry of all global indices used to power the IEPA (Innovative EcoSystems Prosperity Algorithm). Each index is mapped to an IEPA Foundation Factor, weighted, tagged, and enriched with available data years for historical loading (2020\u20132024).",
     "iconography": "iconography.json",
     "changelog": {
+      "v2.1.0": "Added iepa_weight_normalized field to all indices. Normalized weights sum to exactly 1.0 per factor, fixing raw weight drift (previously 1.49–2.34 per factor).",
       "v2.0.0": "Added 58 new indices across all IEPA factors. Added data_years field to all entries for 2020-2024 historical data pipeline. Enhanced schema with improved coverage metadata.",
       "v1.0.0": "Initial release with 105 indices."
     }
@@ -43,7 +44,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.1011
     },
     {
       "id": "BII",
@@ -73,7 +75,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0508
     },
     {
       "id": "GCI",
@@ -103,7 +106,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0508
     },
     {
       "id": "NRI",
@@ -133,7 +137,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0406
     },
     {
       "id": "IMD_DIGITAL",
@@ -163,7 +168,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0406
     },
     {
       "id": "AI_READINESS",
@@ -192,7 +198,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0355
     },
     {
       "id": "ITU_ICT",
@@ -221,7 +228,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "CYBERSECURITY",
@@ -250,7 +258,8 @@
         2021,
         2022,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0254
     },
     {
       "id": "WIPO_PATENTS",
@@ -280,7 +289,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0355
     },
     {
       "id": "OECD_MSTI",
@@ -310,7 +320,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "COURSERA_SKILLS",
@@ -340,7 +351,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0203
     },
     {
       "id": "WEF_TECH_FRONTIER",
@@ -367,7 +379,8 @@
       "data_years": [
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0254
     },
     {
       "id": "GEI",
@@ -396,7 +409,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.1135
     },
     {
       "id": "STARTUP_GENOME",
@@ -426,7 +440,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0847
     },
     {
       "id": "WB_BUSINESS_READY",
@@ -452,7 +467,8 @@
       ],
       "data_years": [
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0678
     },
     {
       "id": "GEM",
@@ -482,7 +498,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0452
     },
     {
       "id": "VC_KPMG",
@@ -512,7 +529,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0452
     },
     {
       "id": "WB_FINDEX",
@@ -540,7 +558,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0395
     },
     {
       "id": "ITC_SME",
@@ -570,7 +589,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0339
     },
     {
       "id": "FEI",
@@ -599,7 +619,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0282
     },
     {
       "id": "GIIN_IMPACT",
@@ -629,7 +650,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0282
     },
     {
       "id": "BCG_INNOVATION",
@@ -659,7 +681,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0226
     },
     {
       "id": "DEALROOM_ECOSYSTEMS",
@@ -689,7 +712,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0395
     },
     {
       "id": "GPI",
@@ -719,7 +743,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0777
     },
     {
       "id": "EPI",
@@ -747,7 +772,8 @@
         2020,
         2022,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0518
     },
     {
       "id": "HDI",
@@ -777,7 +803,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0518
     },
     {
       "id": "SPI",
@@ -807,7 +834,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0415
     },
     {
       "id": "CPI",
@@ -837,7 +865,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0415
     },
     {
       "id": "RULE_OF_LAW",
@@ -867,7 +896,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0415
     },
     {
       "id": "FSI",
@@ -897,7 +927,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0363
     },
     {
       "id": "DEMOCRACY_INDEX",
@@ -927,7 +958,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0259
     },
     {
       "id": "FREEDOM_HOUSE",
@@ -957,7 +989,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0259
     },
     {
       "id": "SDG_INDEX",
@@ -987,7 +1020,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0311
     },
     {
       "id": "ENERGY_TRANSITION",
@@ -1017,7 +1051,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0259
     },
     {
       "id": "GII_GENDER",
@@ -1047,7 +1082,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0207
     },
     {
       "id": "CLIMATE_VULNERABILITY",
@@ -1077,7 +1113,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0259
     },
     {
       "id": "SOCIAL_COHESION",
@@ -1106,7 +1143,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0207
     },
     {
       "id": "WGI_GOV_EFF",
@@ -1135,7 +1173,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.09
     },
     {
       "id": "WGI_REG_QUALITY",
@@ -1164,7 +1203,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.075
     },
     {
       "id": "ECONOMIC_FREEDOM",
@@ -1194,7 +1234,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.05
     },
     {
       "id": "OPEN_GOVERNMENT",
@@ -1224,7 +1265,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.04
     },
     {
       "id": "TRADE_FACILITATION",
@@ -1254,7 +1296,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.04
     },
     {
       "id": "PPP_READINESS",
@@ -1283,7 +1326,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.035
     },
     {
       "id": "PAYING_TAXES",
@@ -1312,7 +1356,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.03
     },
     {
       "id": "OECD_PSI",
@@ -1341,7 +1386,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.03
     },
     {
       "id": "GTCI",
@@ -1371,7 +1417,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.04
     },
     {
       "id": "UNIV_INDUSTRY",
@@ -1400,7 +1447,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.035
     },
     {
       "id": "KOF_GLOBALISATION",
@@ -1430,7 +1478,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.035
     },
     {
       "id": "FDI_CONFIDENCE",
@@ -1461,7 +1510,8 @@
         2023,
         2024,
         2025
-      ]
+      ],
+      "iepa_weight_normalized": 0.0855
     },
     {
       "id": "UNCTAD_WIR",
@@ -1492,7 +1542,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0769
     },
     {
       "id": "WB_FDI",
@@ -1522,7 +1573,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0513
     },
     {
       "id": "LPI",
@@ -1552,7 +1604,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0342
     },
     {
       "id": "MARKET_POTENTIAL",
@@ -1582,7 +1635,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0342
     },
     {
       "id": "SEZ_INDEX",
@@ -1612,7 +1666,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0299
     },
     {
       "id": "JLL_TRANSPARENCY",
@@ -1641,7 +1696,8 @@
         2021,
         2022,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0214
     },
     {
       "id": "INFRASTRUCTURE_QUALITY",
@@ -1671,7 +1727,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0299
     },
     {
       "id": "TAX_COMPETITIVENESS",
@@ -1701,7 +1758,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0256
     },
     {
       "id": "EXPAT_RANKINGS",
@@ -1731,7 +1789,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0171
     },
     {
       "id": "GCI_MARKET_SIZE",
@@ -1761,7 +1820,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0214
     },
     {
       "id": "GSCI",
@@ -1791,7 +1851,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0805
     },
     {
       "id": "IMF_GDP_GROWTH",
@@ -1821,7 +1882,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.1005
     },
     {
       "id": "ILO_EMPLOYMENT",
@@ -1851,7 +1913,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0671
     },
     {
       "id": "CB_INSIGHTS_UNICORN",
@@ -1881,7 +1944,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0537
     },
     {
       "id": "WB_POVERTY",
@@ -1911,7 +1975,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.047
     },
     {
       "id": "MPI",
@@ -1941,7 +2006,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0336
     },
     {
       "id": "OECD_BETTER_LIFE",
@@ -1971,7 +2037,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0336
     },
     {
       "id": "WEF_INCLUSIVE_GROWTH",
@@ -2000,7 +2067,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0403
     },
     {
       "id": "NATIXIS_RETIREMENT",
@@ -2030,7 +2098,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0268
     },
     {
       "id": "UNHCR_DISPLACEMENT",
@@ -2060,7 +2129,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0155
     },
     {
       "id": "WB_HUMAN_CAPITAL",
@@ -2090,7 +2160,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "QS_RANKINGS",
@@ -2120,7 +2191,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0254
     },
     {
       "id": "PRESS_FREEDOM",
@@ -2150,7 +2222,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0207
     },
     {
       "id": "FOOD_SECURITY",
@@ -2180,7 +2253,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0207
     },
     {
       "id": "WATER_RISK",
@@ -2210,7 +2284,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0155
     },
     {
       "id": "GHS_INDEX",
@@ -2239,7 +2314,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0207
     },
     {
       "id": "YOUTH_DEV",
@@ -2269,7 +2345,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0155
     },
     {
       "id": "OPEN_DATA_BAROMETER",
@@ -2298,7 +2375,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.02
     },
     {
       "id": "IMD_WORLD_COMP",
@@ -2328,7 +2406,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.03
     },
     {
       "id": "PISA",
@@ -2354,7 +2433,8 @@
       ],
       "data_years": [
         2022
-      ]
+      ],
+      "iepa_weight_normalized": 0.0254
     },
     {
       "id": "TIMSS",
@@ -2380,7 +2460,8 @@
       ],
       "data_years": [
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0152
     },
     {
       "id": "INCLUSIVE_INTERNET",
@@ -2409,7 +2490,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0203
     },
     {
       "id": "IP_INDEX",
@@ -2439,7 +2521,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "OECD_ENTREPRENEURSHIP",
@@ -2469,7 +2552,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0282
     },
     {
       "id": "WEF_TRAVEL_TOURISM",
@@ -2498,7 +2582,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0171
     },
     {
       "id": "OECD_FDI",
@@ -2528,7 +2613,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0256
     },
     {
       "id": "GREENFIELD_FDI",
@@ -2558,7 +2644,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0342
     },
     {
       "id": "IFC_INVESTMENT_CLIMATE",
@@ -2588,7 +2675,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0256
     },
     {
       "id": "COFACE_RISK",
@@ -2618,7 +2706,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0214
     },
     {
       "id": "EIU_RISK",
@@ -2648,7 +2737,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0214
     },
     {
       "id": "WIPO_PCT",
@@ -2678,7 +2768,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0254
     },
     {
       "id": "IMF_FSI",
@@ -2708,7 +2799,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0207
     },
     {
       "id": "WB_GOVERNANCE",
@@ -2737,7 +2829,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.05
     },
     {
       "id": "OECD_DIGITAL_GOV",
@@ -2766,7 +2859,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.025
     },
     {
       "id": "WEF_IE_ECOSYSTEMS",
@@ -2794,7 +2888,8 @@
         2023,
         2024,
         2025
-      ]
+      ],
+      "iepa_weight_normalized": 0.0339
     },
     {
       "id": "OECD_STARTUP_POLICY",
@@ -2824,7 +2919,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0282
     },
     {
       "id": "GLOBAL_GENDER_GAP",
@@ -2854,7 +2950,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0207
     },
     {
       "id": "GLOBAL_COMPETITIVENESS_4IR",
@@ -2883,7 +2980,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0203
     },
     {
       "id": "UN_EGOVERNMENT",
@@ -2911,7 +3009,8 @@
         2020,
         2022,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.025
     },
     {
       "id": "GFSI_INVESTMENT",
@@ -2941,7 +3040,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0171
     },
     {
       "id": "WB_DOING_BUSINESS_ARCHIVE",
@@ -2967,7 +3067,8 @@
       ],
       "data_years": [
         2020
-      ]
+      ],
+      "iepa_weight_normalized": 0.0226
     },
     {
       "id": "MSCI_ESG",
@@ -2997,7 +3098,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0214
     },
     {
       "id": "HERITAGE_INVESTMENT_FREEDOM",
@@ -3027,7 +3129,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0171
     },
     {
       "id": "BSA_CLOUD",
@@ -3056,7 +3159,8 @@
         2021,
         2022,
         2023
-      ]
+      ],
+      "iepa_weight_normalized": 0.0152
     },
     {
       "id": "OECD_PMR",
@@ -3086,7 +3190,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.025
     },
     {
       "id": "UN_INNOVATION_AGENCY",
@@ -3115,7 +3220,8 @@
         2022,
         2023,
         2024
-      ]
+      ],
+      "iepa_weight_normalized": 0.0203
     },
     {
       "id": "STANFORD_AI_INDEX",
@@ -3146,7 +3252,8 @@
         "R&D",
         "talent",
         "policy"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0508
     },
     {
       "id": "TORTOISE_AI",
@@ -3175,7 +3282,8 @@
         "innovation",
         "investment",
         "talent"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0406
     },
     {
       "id": "OECD_STI",
@@ -3202,7 +3310,8 @@
         "policy",
         "R&D",
         "innovation systems"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0406
     },
     {
       "id": "WIPO_TECH_TRENDS",
@@ -3232,7 +3341,8 @@
         "technology",
         "AI",
         "climate tech"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "SCIENTIFIC_PRODUCTION",
@@ -3261,7 +3371,8 @@
         "publications",
         "citations",
         "academia"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "ITU_DIGITAL_DEV",
@@ -3291,7 +3402,8 @@
         "broadband",
         "mobile",
         "internet access"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "WEF_FUTURE_JOBS",
@@ -3319,7 +3431,8 @@
         "skills",
         "automation",
         "workforce"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "OECD_EDUCATION",
@@ -3349,7 +3462,8 @@
         "STEM",
         "tertiary",
         "talent pipeline"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0305
     },
     {
       "id": "GSER_EXTENDED",
@@ -3380,7 +3494,8 @@
         "exits",
         "talent",
         "emerging markets"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0565
     },
     {
       "id": "CRUNCHBASE_EMERGING",
@@ -3410,7 +3525,8 @@
         "funding",
         "venture capital",
         "unicorns"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0452
     },
     {
       "id": "PITCHBOOK_EM",
@@ -3440,7 +3556,8 @@
         "private equity",
         "exits",
         "deal flow"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0452
     },
     {
       "id": "GSBI",
@@ -3468,7 +3585,8 @@
         "social enterprise",
         "impact",
         "inclusive innovation"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0282
     },
     {
       "id": "OECD_FINANCING_SMES",
@@ -3498,7 +3616,8 @@
         "finance",
         "access to credit",
         "equity"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0452
     },
     {
       "id": "MSME_FINANCE_GAP",
@@ -3526,7 +3645,8 @@
         "finance gap",
         "emerging markets",
         "access to finance"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0395
     },
     {
       "id": "TECHCRUNCH_EM_TRACKER",
@@ -3556,7 +3676,8 @@
         "Southeast Asia",
         "startups",
         "regional"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0282
     },
     {
       "id": "WB_ENTERPRISE_SURVEY",
@@ -3586,7 +3707,8 @@
         "business climate",
         "private sector",
         "firm-level data"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0508
     },
     {
       "id": "ND_GAIN",
@@ -3615,7 +3737,8 @@
         "adaptation",
         "vulnerability",
         "resilience"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0415
     },
     {
       "id": "INFORM_RISK",
@@ -3645,7 +3768,8 @@
         "disaster risk",
         "coping capacity",
         "vulnerability"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0363
     },
     {
       "id": "WHO_HEALTH",
@@ -3675,7 +3799,8 @@
         "UHC",
         "life expectancy",
         "mortality"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0363
     },
     {
       "id": "WORLD_RISK_INDEX",
@@ -3705,7 +3830,8 @@
         "natural hazards",
         "vulnerability",
         "coping"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0311
     },
     {
       "id": "CLIMATE_CHANGE_PERF",
@@ -3735,7 +3861,8 @@
         "GHG emissions",
         "renewable energy",
         "climate policy"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0363
     },
     {
       "id": "IEP_ECOLOGICAL",
@@ -3764,7 +3891,8 @@
         "food security",
         "water stress",
         "peace"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0311
     },
     {
       "id": "SOCIAL_MOBILITY",
@@ -3790,7 +3918,8 @@
         "inequality",
         "opportunity",
         "inclusion"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0311
     },
     {
       "id": "HOUSEHOLD_INCOME",
@@ -3820,7 +3949,8 @@
         "income distribution",
         "wealth",
         "inclusion"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0311
     },
     {
       "id": "PENSION_ADEQUACY",
@@ -3850,7 +3980,8 @@
         "retirement",
         "social security",
         "ageing"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0259
     },
     {
       "id": "LANCET_BURDEN",
@@ -3879,7 +4010,8 @@
         "disease burden",
         "mortality",
         "DALYs"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0311
     },
     {
       "id": "WGI_VOICE_ACC",
@@ -3908,7 +4040,8 @@
         "accountability",
         "democracy",
         "civil liberties"
-      ]
+      ],
+      "iepa_weight_normalized": 0.035
     },
     {
       "id": "WGI_POLITICAL_STABILITY",
@@ -3937,7 +4070,8 @@
         "governance",
         "security",
         "investment climate"
-      ]
+      ],
+      "iepa_weight_normalized": 0.04
     },
     {
       "id": "WGI_CONTROL_CORRUPTION",
@@ -3966,7 +4100,8 @@
         "governance",
         "rule of law",
         "public sector"
-      ]
+      ],
+      "iepa_weight_normalized": 0.04
     },
     {
       "id": "OECD_GOVATAGLANCE",
@@ -3993,7 +4128,8 @@
         "governance",
         "budget",
         "regulation"
-      ]
+      ],
+      "iepa_weight_normalized": 0.03
     },
     {
       "id": "GLOBAL_INTEGRITY",
@@ -4020,7 +4156,8 @@
         "defence",
         "transparency",
         "governance"
-      ]
+      ],
+      "iepa_weight_normalized": 0.025
     },
     {
       "id": "BUDGET_TRANSPARENCY",
@@ -4047,7 +4184,8 @@
         "transparency",
         "accountability",
         "fiscal"
-      ]
+      ],
+      "iepa_weight_normalized": 0.03
     },
     {
       "id": "OECD_REGULATORY",
@@ -4074,7 +4212,8 @@
         "policy quality",
         "governance",
         "impact assessment"
-      ]
+      ],
+      "iepa_weight_normalized": 0.035
     },
     {
       "id": "UN_PUBLIC_SECTOR",
@@ -4104,7 +4243,8 @@
         "governance",
         "institutional reform",
         "capacity building"
-      ]
+      ],
+      "iepa_weight_normalized": 0.025
     },
     {
       "id": "IBA_RULE_OF_LAW",
@@ -4134,7 +4274,8 @@
         "justice",
         "governance",
         "accountability"
-      ]
+      ],
+      "iepa_weight_normalized": 0.035
     },
     {
       "id": "EIU_DEMOCRACY_PLUS",
@@ -4164,7 +4305,8 @@
         "safety",
         "rule of law",
         "human development"
-      ]
+      ],
+      "iepa_weight_normalized": 0.03
     },
     {
       "id": "UNCTAD_FDI_INFLOWS",
@@ -4194,7 +4336,8 @@
         "investment flows",
         "inflows",
         "outflows"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0513
     },
     {
       "id": "UNCTAD_INVESTMENT_MONITOR",
@@ -4224,7 +4367,8 @@
         "BIT",
         "FTA",
         "investment promotion"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0342
     },
     {
       "id": "FDI_INTELLIGENCE",
@@ -4254,7 +4398,8 @@
         "investment projects",
         "sectors",
         "location attractiveness"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0342
     },
     {
       "id": "WB_BUSINESS_CLIMATE",
@@ -4280,7 +4425,8 @@
         "regulation",
         "trade",
         "taxation"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0385
     },
     {
       "id": "OECD_TRADE_FACILITATION",
@@ -4307,7 +4453,8 @@
         "customs",
         "border procedures",
         "market access"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0299
     },
     {
       "id": "WTO_TRADE_POLICY",
@@ -4337,7 +4484,8 @@
         "tariffs",
         "market access",
         "WTO"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0256
     },
     {
       "id": "IPA_BENCHMARKING",
@@ -4364,7 +4512,8 @@
         "investment promotion",
         "aftercare",
         "FDI attraction"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0256
     },
     {
       "id": "GLOBAL_FINANCE_FDI",
@@ -4394,7 +4543,8 @@
         "investment risk",
         "banking",
         "currency"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0214
     },
     {
       "id": "MOODY_SOVEREIGN",
@@ -4424,7 +4574,8 @@
         "credit ratings",
         "investment grade",
         "risk"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0299
     },
     {
       "id": "SP_SOVEREIGN",
@@ -4454,7 +4605,8 @@
         "credit ratings",
         "risk",
         "capital markets"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0299
     },
     {
       "id": "IMF_ARTICLE_IV",
@@ -4485,7 +4637,8 @@
         "fiscal",
         "monetary policy",
         "surveillance"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0256
     },
     {
       "id": "REGIONAL_DEVELOPMENT_BANK_FDI",
@@ -4515,7 +4668,8 @@
         "investment climate",
         "regional development",
         "capacity"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0256
     },
     {
       "id": "IMF_WEO_EXTENDED",
@@ -4546,7 +4700,8 @@
         "inflation",
         "unemployment",
         "macro outcomes"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0805
     },
     {
       "id": "WB_NATIONAL_ACCOUNTS",
@@ -4576,7 +4731,8 @@
         "GNI",
         "national accounts",
         "capital formation"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0671
     },
     {
       "id": "ILO_LABOUR_EXTENDED",
@@ -4607,7 +4763,8 @@
         "productivity",
         "labor market",
         "youth unemployment"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0604
     },
     {
       "id": "CB_INSIGHTS_UNICORN_TRACKER",
@@ -4637,7 +4794,8 @@
         "venture capital",
         "exits",
         "scalable companies"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0537
     },
     {
       "id": "GEDI_ECOSYSTEM_VALUE",
@@ -4667,7 +4825,8 @@
         "exits",
         "startup valuation",
         "economic impact"
-      ]
+      ],
+      "iepa_weight_normalized": 0.047
     },
     {
       "id": "OECD_PRODUCTIVITY",
@@ -4697,7 +4856,8 @@
         "labor productivity",
         "TFP",
         "competitiveness"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0537
     },
     {
       "id": "HAPPY_PLANET",
@@ -4727,7 +4887,8 @@
         "wellbeing",
         "life satisfaction",
         "social support"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0403
     },
     {
       "id": "WB_REMITTANCES",
@@ -4757,7 +4918,8 @@
         "diaspora",
         "capital flows",
         "household income"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0336
     },
     {
       "id": "OECD_DOMESTIC_PRODUCT_PCT",
@@ -4786,7 +4948,8 @@
         "sub-national",
         "quality of life",
         "civic engagement"
-      ]
+      ],
+      "iepa_weight_normalized": 0.0336
     },
     {
       "id": "WB_POVERTY_TRACKER",
@@ -4814,7 +4977,8 @@
         "inequality",
         "shared prosperity",
         "bottom 40%"
-      ]
+      ],
+      "iepa_weight_normalized": 0.047
     }
   ]
 }

@@ -64,6 +64,7 @@ Each index entry follows this structure:
   "iepa_zone": "Foundations",
   "iepa_factor": "Innovation Capacity",
   "iepa_weight": 0.20,
+  "iepa_weight_normalized": 0.1015,
   "tier": "Primary",
   "data_access": "Free",
   "license": "Open",
@@ -86,7 +87,8 @@ Each index entry follows this structure:
 | `country_coverage` | Number of countries covered |
 | `iepa_zone` | Which IEPA zone this feeds: `Foundations`, `Engine`, or `Outcomes` |
 | `iepa_factor` | Specific factor within the zone |
-| `iepa_weight` | Relative weight within that factor (0–1, factor weights sum to 1.0) |
+| `iepa_weight` | Relative weight within that factor (raw, may not sum to 1.0) |
+| `iepa_weight_normalized` | Normalized weight within factor (all factors sum to exactly 1.0) |
 | `tier` | `Primary` / `Secondary` / `Tertiary` — importance to algorithm |
 | `data_access` | `Free`, `Paid`, or `Free (summary) / Paid (full)` |
 | `license` | `Open` or `Restricted` |
