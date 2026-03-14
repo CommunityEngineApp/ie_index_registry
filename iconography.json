@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "name": "IE Platform Iconography",
+    "description": "Canonical icon mapping for the IE Community Platform UI. All icon names reference the Lucide icon library (https://lucide.dev), which ships with shadcn/ui and Lovable.",
+    "version": "1.0.0",
+    "last_updated": "2026-03-14",
+    "icon_library": "lucide-react",
+    "icon_library_url": "https://lucide.dev/icons"
+  },
+
+  "brand": {
+    "logo": {
+      "icon": "hexagon",
+      "label": "Innovative EcoSystems",
+      "color": "#0F766E",
+      "description": "Primary brand mark — hexagon representing interconnected ecosystems"
+    },
+    "iepa_badge": {
+      "icon": "brain-circuit",
+      "label": "IEPA",
+      "color": "#7C3AED",
+      "description": "IEPA algorithm badge used on score cards and dashboards"
+    }
+  },
+
+  "zones": {
+    "Foundations": {
+      "icon": "layers",
+      "color": "#2563EB",
+      "description": "What a region builds — structural inputs that enable prosperity"
+    },
+    "Engine": {
+      "icon": "cog",
+      "color": "#D97706",
+      "description": "How prosperity is created — capital and market dynamics"
+    },
+    "Outcomes": {
+      "icon": "trophy",
+      "color": "#059669",
+      "description": "What success looks like — measurable prosperity results"
+    }
+  },
+
+  "factors": {
+    "Innovation Capacity": {
+      "icon": "lightbulb",
+      "color": "#3B82F6",
+      "zone": "Foundations",
+      "description": "R&D, infrastructure, digital readiness, IP, tech adoption"
+    },
+    "Entrepreneurship Capacity": {
+      "icon": "rocket",
+      "color": "#8B5CF6",
+      "zone": "Foundations",
+      "description": "Startup formation, scale-up pathways, access to capital"
+    },
+    "Resilience": {
+      "icon": "shield-check",
+      "color": "#10B981",
+      "zone": "Foundations",
+      "description": "Peace, stability, environment, social cohesion, institutional trust"
+    },
+    "Alignment": {
+      "icon": "git-merge",
+      "color": "#6366F1",
+      "zone": "Foundations",
+      "description": "Government-industry-university coordination and governance quality"
+    },
+    "FDI Accelerator": {
+      "icon": "trending-up",
+      "color": "#F59E0B",
+      "zone": "Engine",
+      "description": "Capital attraction, market access, investment climate"
+    },
+    "Prosperity Outcomes": {
+      "icon": "bar-chart-3",
+      "color": "#22C55E",
+      "zone": "Outcomes",
+      "description": "GDP growth, job creation, scalable company creation"
+    }
+  },
+
+  "tiers": {
+    "Primary": {
+      "icon": "star",
+      "color": "#EAB308",
+      "description": "Core IEPA inputs — required for algorithm computation"
+    },
+    "Secondary": {
+      "icon": "circle-dot",
+      "color": "#6B7280",
+      "description": "Supplementary inputs — validation and enrichment"
+    },
+    "Tertiary": {
+      "icon": "circle",
+      "color": "#D1D5DB",
+      "description": "Contextual signals — UI enrichment and scenario analysis"
+    }
+  },
+
+  "data_access": {
+    "Free": {
+      "icon": "unlock",
+      "color": "#22C55E",
+      "description": "Fully open data, downloadable without restriction"
+    },
+    "Paid": {
+      "icon": "lock",
+      "color": "#EF4444",
+      "description": "Requires paid subscription or license"
+    },
+    "Partial": {
+      "icon": "lock-keyhole",
+      "color": "#F59E0B",
+      "match_pattern": "Free.*Paid|partial|summary",
+      "description": "Summary data free, full dataset requires payment"
+    }
+  },
+
+  "navigation": {
+    "dashboard": {
+      "icon": "layout-dashboard",
+      "label": "Dashboard"
+    },
+    "indices": {
+      "icon": "database",
+      "label": "Index Registry"
+    },
+    "countries": {
+      "icon": "globe",
+      "label": "Countries"
+    },
+    "compare": {
+      "icon": "columns-3",
+      "label": "Compare"
+    },
+    "scores": {
+      "icon": "calculator",
+      "label": "IEPA Scores"
+    },
+    "methodology": {
+      "icon": "book-open",
+      "label": "Methodology"
+    },
+    "settings": {
+      "icon": "settings",
+      "label": "Settings"
+    }
+  },
+
+  "actions": {
+    "download": {
+      "icon": "download",
+      "label": "Download Data"
+    },
+    "filter": {
+      "icon": "filter",
+      "label": "Filter"
+    },
+    "search": {
+      "icon": "search",
+      "label": "Search"
+    },
+    "sort": {
+      "icon": "arrow-up-down",
+      "label": "Sort"
+    },
+    "expand": {
+      "icon": "chevron-down",
+      "label": "Expand"
+    },
+    "external_link": {
+      "icon": "external-link",
+      "label": "View Source"
+    },
+    "refresh": {
+      "icon": "refresh-cw",
+      "label": "Refresh Data"
+    },
+    "share": {
+      "icon": "share-2",
+      "label": "Share"
+    }
+  },
+
+  "status": {
+    "up_to_date": {
+      "icon": "check-circle-2",
+      "color": "#22C55E",
+      "label": "Up to Date"
+    },
+    "stale": {
+      "icon": "alert-triangle",
+      "color": "#F59E0B",
+      "label": "Data Stale"
+    },
+    "missing": {
+      "icon": "x-circle",
+      "color": "#EF4444",
+      "label": "Data Missing"
+    },
+    "loading": {
+      "icon": "loader-2",
+      "color": "#6B7280",
+      "label": "Loading"
+    }
+  },
+
+  "tag_categories": {
+    "innovation": {
+      "icon": "lightbulb",
+      "tags": ["innovation", "R&D", "IP", "patents", "STEM", "science", "research", "publications", "citations", "trademarks"]
+    },
+    "digital": {
+      "icon": "wifi",
+      "tags": ["digital", "ICT", "internet", "broadband", "mobile", "AI", "cybersecurity", "cloud", "data", "4IR", "machine learning"]
+    },
+    "finance": {
+      "icon": "wallet",
+      "tags": ["finance", "capital", "investment", "VC", "venture capital", "FDI", "banking", "credit ratings", "equity", "funding"]
+    },
+    "entrepreneurship": {
+      "icon": "rocket",
+      "tags": ["entrepreneurship", "startups", "startup ecosystems", "unicorns", "scale-up", "business creation", "founder"]
+    },
+    "governance": {
+      "icon": "landmark",
+      "tags": ["governance", "government", "regulation", "rule of law", "corruption", "transparency", "policy", "institutions"]
+    },
+    "trade": {
+      "icon": "ship",
+      "tags": ["trade", "tariffs", "customs", "logistics", "supply chain", "WTO", "FTA", "trade facilitation"]
+    },
+    "sustainability": {
+      "icon": "leaf",
+      "tags": ["climate", "environment", "sustainability", "renewable energy", "GHG emissions", "water", "ESG"]
+    },
+    "social": {
+      "icon": "users",
+      "tags": ["education", "health", "gender", "equality", "poverty", "human development", "wellbeing", "social progress"]
+    },
+    "economic": {
+      "icon": "trending-up",
+      "tags": ["GDP", "growth", "productivity", "employment", "wages", "inflation", "macro"]
+    },
+    "risk": {
+      "icon": "alert-triangle",
+      "tags": ["risk", "fragility", "conflict", "political risk", "country risk", "vulnerability", "disaster risk"]
+    }
+  },
+
+  "score_display": {
+    "high": {
+      "icon": "arrow-up-circle",
+      "color": "#22C55E",
+      "label": "High Score",
+      "threshold_min": 70
+    },
+    "medium": {
+      "icon": "minus-circle",
+      "color": "#F59E0B",
+      "label": "Medium Score",
+      "threshold_min": 40
+    },
+    "low": {
+      "icon": "arrow-down-circle",
+      "color": "#EF4444",
+      "label": "Low Score",
+      "threshold_min": 0
+    },
+    "trend_up": {
+      "icon": "trending-up",
+      "color": "#22C55E"
+    },
+    "trend_down": {
+      "icon": "trending-down",
+      "color": "#EF4444"
+    },
+    "trend_flat": {
+      "icon": "minus",
+      "color": "#6B7280"
+    }
+  },
+
+  "countries": {
+    "default_icon": "flag",
+    "tier_1_markets": {
+      "VNM": { "label": "Vietnam", "emoji": "🇻🇳" },
+      "IND": { "label": "India", "emoji": "🇮🇳" },
+      "EGY": { "label": "Egypt", "emoji": "🇪🇬" },
+      "TUR": { "label": "Turkey", "emoji": "🇹🇷" },
+      "THA": { "label": "Thailand", "emoji": "🇹🇭" },
+      "KOR": { "label": "South Korea", "emoji": "🇰🇷" },
+      "PHL": { "label": "Philippines", "emoji": "🇵🇭" },
+      "SAU": { "label": "Saudi Arabia", "emoji": "🇸🇦" },
+      "ARE": { "label": "UAE", "emoji": "🇦🇪" },
+      "IDN": { "label": "Indonesia", "emoji": "🇮🇩" },
+      "MYS": { "label": "Malaysia", "emoji": "🇲🇾" },
+      "MAR": { "label": "Morocco", "emoji": "🇲🇦" },
+      "KEN": { "label": "Kenya", "emoji": "🇰🇪" }
+    }
+  }
+}

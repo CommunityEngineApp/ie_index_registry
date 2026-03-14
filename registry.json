@@ -7,6 +7,7 @@
     "owner": "Innovative EcoSystems",
     "github": "https://github.com/CommunityEngineApp/ie_index_registry",
     "description": "Master registry of all global indices used to power the IEPA (Innovative EcoSystems Prosperity Algorithm). Each index is mapped to an IEPA Foundation Factor, weighted, tagged, and enriched with available data years for historical loading (2020\u20132024).",
+    "iconography": "iconography.json",
     "changelog": {
       "v2.0.0": "Added 58 new indices across all IEPA factors. Added data_years field to all entries for 2020-2024 historical data pipeline. Enhanced schema with improved coverage metadata.",
       "v1.0.0": "Initial release with 105 indices."

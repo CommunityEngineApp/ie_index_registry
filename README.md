@@ -213,6 +213,44 @@ IE Community Platform (Lovable)
 
 ---
 
+## Iconography
+
+The file `iconography.json` defines the canonical icon mapping for the IE Community Platform UI. All icon names reference the **Lucide** icon library (`lucide-react`), which ships with shadcn/ui and Lovable.
+
+### What It Covers
+
+| Section | Purpose |
+|---|---|
+| `brand` | Logo and IEPA badge icons with brand colors |
+| `zones` | Icons for Foundations, Engine, and Outcomes |
+| `factors` | Icons for each of the 6 IEPA factors |
+| `tiers` | Visual indicators for Primary / Secondary / Tertiary |
+| `data_access` | Lock/unlock icons for free vs. paid data |
+| `navigation` | Sidebar and nav menu icons |
+| `actions` | Common UI actions (download, filter, search, sort) |
+| `status` | Data freshness indicators |
+| `tag_categories` | Icon groupings for the tag cloud |
+| `score_display` | Score level indicators and trend arrows |
+| `countries` | Country flag emoji for Tier 1 markets |
+
+### Usage in Lovable
+
+```javascript
+import { Lightbulb, Rocket, ShieldCheck } from "lucide-react";
+
+const ICON_URL =
+  "https://raw.githubusercontent.com/CommunityEngineApp/ie_index_registry/main/iconography.json";
+
+const response = await fetch(ICON_URL);
+const iconography = await response.json();
+
+// Get factor icon name
+const innovationIcon = iconography.factors["Innovation Capacity"].icon;
+// => "lightbulb"
+```
+
+---
+
 ## Versioning & Updates
 
 All changes to this registry are tracked via Git commits. Follow this convention:
