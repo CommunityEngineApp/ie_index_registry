@@ -1,0 +1,665 @@
+{
+  "meta": {
+    "name": "IEPA Value Matrix",
+    "version": "2.0.0",
+    "last_updated": "2026-03-23",
+    "description": "Defines the measurement variables and their weighted importance within the Innovative EcoSystems Prosperity Algorithm (IEPA). Weights reflect each variable's relative contribution to its factor, and each factor's contribution to the overall prosperity score.",
+    "total_factors": 6,
+    "total_indices": 163,
+    "total_weight_sum": 11.5,
+    "tier_definitions": {
+      "Primary": "Core IEPA inputs — required for computation. Highest signal fidelity.",
+      "Secondary": "Supplementary inputs — used for validation, enrichment, and cross-checking.",
+      "Tertiary": "Contextual signals — used for UI enrichment, scenario modeling, and trend analysis."
+    }
+  },
+  "factor_weights": {
+    "description": "Relative importance of each IEPA factor within the overall algorithm. Normalized from raw factor weight totals (sum = 11.50).",
+    "factors": [
+      {
+        "id": "FDI_ACCELERATOR",
+        "name": "FDI Accelerator",
+        "zone": "Engine",
+        "raw_weight": 2.34,
+        "normalized_weight": 0.2035,
+        "algorithm_share_pct": 20.35,
+        "index_count": 32,
+        "rank": 1,
+        "description": "Measures a region's ability to attract, retain, and deploy foreign direct investment. Highest-weighted factor — capital attraction is the primary engine of ecosystem formation."
+      },
+      {
+        "id": "ALIGNMENT",
+        "name": "Alignment",
+        "zone": "Foundations",
+        "raw_weight": 2.00,
+        "normalized_weight": 0.1739,
+        "algorithm_share_pct": 17.39,
+        "index_count": 27,
+        "rank": 2,
+        "description": "Measures coordination quality between government, industry, and academia. Captures governance effectiveness, regulatory quality, and institutional readiness."
+      },
+      {
+        "id": "INNOVATION_CAPACITY",
+        "name": "Innovation Capacity",
+        "zone": "Foundations",
+        "raw_weight": 1.97,
+        "normalized_weight": 0.1713,
+        "algorithm_share_pct": 17.13,
+        "index_count": 30,
+        "rank": 3,
+        "description": "Measures R&D output, digital infrastructure, IP production, and technology adoption. Reflects the depth and quality of a region's knowledge economy."
+      },
+      {
+        "id": "RESILIENCE",
+        "name": "Resilience",
+        "zone": "Foundations",
+        "raw_weight": 1.93,
+        "normalized_weight": 0.1678,
+        "algorithm_share_pct": 16.78,
+        "index_count": 32,
+        "rank": 4,
+        "description": "Measures stability across peace, environment, health, human development, and institutional trust. Foundational baseline — without resilience, prosperity gains are unsustainable."
+      },
+      {
+        "id": "ENTREPRENEURSHIP_CAPACITY",
+        "name": "Entrepreneurship Capacity",
+        "zone": "Engine",
+        "raw_weight": 1.77,
+        "normalized_weight": 0.1539,
+        "algorithm_share_pct": 15.39,
+        "index_count": 23,
+        "rank": 5,
+        "description": "Measures startup formation rates, scale-up pathways, access to capital, and business environment quality. Reflects the entrepreneurial dynamism powering new value creation."
+      },
+      {
+        "id": "PROSPERITY_OUTCOMES",
+        "name": "Prosperity Outcomes",
+        "zone": "Outcomes",
+        "raw_weight": 1.49,
+        "normalized_weight": 0.1296,
+        "algorithm_share_pct": 12.96,
+        "index_count": 19,
+        "rank": 6,
+        "description": "Measures realized prosperity — GDP growth, employment quality, poverty reduction, and scalable company creation. This is the dependent variable the algorithm aims to predict and optimize."
+      }
+    ]
+  },
+  "measurement_variables": {
+    "description": "Primary measurement variables within each IEPA factor. These are the core inputs to the algorithm — Secondary and Tertiary indices provide validation and enrichment but Primary indices drive the score.",
+    "FDI_ACCELERATOR": {
+      "factor_share_pct": 20.35,
+      "primary_variables": [
+        {
+          "id": "FDI_CONFIDENCE",
+          "name": "FDI Confidence Index",
+          "publisher": "AT Kearney",
+          "index_weight": 0.20,
+          "pct_of_factor": 8.55,
+          "pct_of_algorithm": 1.74,
+          "measurement_dimension": "Investor sentiment and forward-looking capital deployment intent"
+        },
+        {
+          "id": "UNCTAD_WIR",
+          "name": "World Investment Report",
+          "publisher": "UNCTAD",
+          "index_weight": 0.18,
+          "pct_of_factor": 7.69,
+          "pct_of_algorithm": 1.57,
+          "measurement_dimension": "Global FDI flows, stock, and emerging market investment trends"
+        },
+        {
+          "id": "WB_FDI",
+          "name": "FDI Inflows (% of GDP)",
+          "publisher": "World Bank",
+          "index_weight": 0.12,
+          "pct_of_factor": 5.13,
+          "pct_of_algorithm": 1.04,
+          "measurement_dimension": "Realized FDI inflow volume as share of economic output"
+        },
+        {
+          "id": "UNCTAD_FDI_INFLOWS",
+          "name": "UNCTAD FDI Inflows Database",
+          "publisher": "UNCTAD",
+          "index_weight": 0.12,
+          "pct_of_factor": 5.13,
+          "pct_of_algorithm": 1.04,
+          "measurement_dimension": "Cross-validated FDI inflow data at country and sector level"
+        },
+        {
+          "id": "WB_BUSINESS_CLIMATE",
+          "name": "Business Climate Assessment",
+          "publisher": "World Bank",
+          "index_weight": 0.09,
+          "pct_of_factor": 3.85,
+          "pct_of_algorithm": 0.78,
+          "measurement_dimension": "Enabling environment quality for private sector investment"
+        },
+        {
+          "id": "GREENFIELD_FDI",
+          "name": "Greenfield FDI Projects",
+          "publisher": "Financial Times / fDi Markets",
+          "index_weight": 0.08,
+          "pct_of_factor": 3.42,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "New capital expenditure projects (not M&A) — organic investment signal"
+        },
+        {
+          "id": "UNCTAD_INVESTMENT_MONITOR",
+          "name": "UNCTAD Investment Monitor",
+          "publisher": "UNCTAD",
+          "index_weight": 0.08,
+          "pct_of_factor": 3.42,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Real-time tracking of cross-border investment announcements"
+        },
+        {
+          "id": "FDI_INTELLIGENCE",
+          "name": "fDi Intelligence Report",
+          "publisher": "fDi Intelligence",
+          "index_weight": 0.08,
+          "pct_of_factor": 3.42,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Sector-level FDI attractiveness and deal tracking"
+        },
+        {
+          "id": "OECD_TRADE_FACILITATION",
+          "name": "Trade Facilitation Indicators",
+          "publisher": "OECD",
+          "index_weight": 0.07,
+          "pct_of_factor": 2.99,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "Border procedures, documentation, and trade infrastructure quality"
+        },
+        {
+          "id": "MOODY_SOVEREIGN",
+          "name": "Sovereign Credit Rating",
+          "publisher": "Moody's",
+          "index_weight": 0.07,
+          "pct_of_factor": 2.99,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "Sovereign creditworthiness and macroeconomic risk perception"
+        },
+        {
+          "id": "SP_SOVEREIGN",
+          "name": "Sovereign Credit Rating",
+          "publisher": "S&P Global",
+          "index_weight": 0.07,
+          "pct_of_factor": 2.99,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "Cross-validated sovereign risk scoring (paired with Moody's)"
+        },
+        {
+          "id": "IMF_ARTICLE_IV",
+          "name": "Article IV Consultation Reports",
+          "publisher": "IMF",
+          "index_weight": 0.06,
+          "pct_of_factor": 2.56,
+          "pct_of_algorithm": 0.52,
+          "measurement_dimension": "Macroeconomic stability, policy quality, and structural reform assessment"
+        }
+      ]
+    },
+    "ALIGNMENT": {
+      "factor_share_pct": 17.39,
+      "primary_variables": [
+        {
+          "id": "WGI_GOV_EFF",
+          "name": "Government Effectiveness (WGI)",
+          "publisher": "World Bank",
+          "index_weight": 0.18,
+          "pct_of_factor": 9.00,
+          "pct_of_algorithm": 1.57,
+          "measurement_dimension": "Quality of public service delivery, civil service independence, policy credibility"
+        },
+        {
+          "id": "WGI_REG_QUALITY",
+          "name": "Regulatory Quality (WGI)",
+          "publisher": "World Bank",
+          "index_weight": 0.15,
+          "pct_of_factor": 7.50,
+          "pct_of_algorithm": 1.30,
+          "measurement_dimension": "Ability to formulate and implement sound regulations enabling private sector development"
+        },
+        {
+          "id": "WB_GOVERNANCE",
+          "name": "Worldwide Governance Indicators",
+          "publisher": "World Bank",
+          "index_weight": 0.10,
+          "pct_of_factor": 5.00,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "Composite governance across 6 dimensions: effectiveness, rule of law, voice, stability, corruption, regulation"
+        },
+        {
+          "id": "GTCI",
+          "name": "Global Talent Competitiveness Index",
+          "publisher": "INSEAD",
+          "index_weight": 0.08,
+          "pct_of_factor": 4.00,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Country ability to grow, attract, and retain talent — human capital alignment signal"
+        },
+        {
+          "id": "IBA_RULE_OF_LAW",
+          "name": "Rule of Law Index",
+          "publisher": "International Bar Association",
+          "index_weight": 0.07,
+          "pct_of_factor": 3.50,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "Legal system integrity, judicial independence, contract enforcement reliability"
+        }
+      ]
+    },
+    "INNOVATION_CAPACITY": {
+      "factor_share_pct": 17.13,
+      "primary_variables": [
+        {
+          "id": "GII",
+          "name": "Global Innovation Index",
+          "publisher": "WIPO",
+          "index_weight": 0.20,
+          "pct_of_factor": 10.15,
+          "pct_of_algorithm": 1.74,
+          "measurement_dimension": "Composite innovation across institutions, human capital, infrastructure, market & business sophistication, knowledge outputs, and creative outputs"
+        },
+        {
+          "id": "GCI",
+          "name": "Global Competitiveness Index",
+          "publisher": "World Economic Forum",
+          "index_weight": 0.10,
+          "pct_of_factor": 5.08,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "Competitive productivity drivers: institutions, infrastructure, ICT adoption, macroeconomic stability, skills, and innovation capability"
+        },
+        {
+          "id": "STANFORD_AI_INDEX",
+          "name": "Stanford AI Index",
+          "publisher": "Stanford University",
+          "index_weight": 0.10,
+          "pct_of_factor": 5.08,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "AI research output, investment, policy readiness, and adoption — forward-looking technology leadership signal"
+        },
+        {
+          "id": "OECD_STI",
+          "name": "Science, Technology & Innovation Outlook",
+          "publisher": "OECD",
+          "index_weight": 0.08,
+          "pct_of_factor": 4.06,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "R&D intensity, STEM workforce, science-industry linkages, and digital transformation policies"
+        },
+        {
+          "id": "WIPO_PATENTS",
+          "name": "Patent Statistics Database",
+          "publisher": "WIPO",
+          "index_weight": 0.07,
+          "pct_of_factor": 3.55,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "IP production volume and quality — direct output measure of knowledge creation"
+        },
+        {
+          "id": "ITU_DIGITAL_DEV",
+          "name": "Digital Development Index",
+          "publisher": "ITU",
+          "index_weight": 0.06,
+          "pct_of_factor": 3.05,
+          "pct_of_algorithm": 0.52,
+          "measurement_dimension": "Connectivity infrastructure, digital skills, and ICT access — prerequisite for digital economy participation"
+        }
+      ]
+    },
+    "RESILIENCE": {
+      "factor_share_pct": 16.78,
+      "primary_variables": [
+        {
+          "id": "GPI",
+          "name": "Global Peace Index",
+          "publisher": "Institute for Economics & Peace",
+          "index_weight": 0.15,
+          "pct_of_factor": 7.77,
+          "pct_of_algorithm": 1.30,
+          "measurement_dimension": "Societal safety, security levels, and militarization — stability prerequisite for investment"
+        },
+        {
+          "id": "EPI",
+          "name": "Environmental Performance Index",
+          "publisher": "Yale University",
+          "index_weight": 0.10,
+          "pct_of_factor": 5.18,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "Environmental health, ecosystem vitality, and climate policy performance"
+        },
+        {
+          "id": "HDI",
+          "name": "Human Development Index",
+          "publisher": "UNDP",
+          "index_weight": 0.10,
+          "pct_of_factor": 5.18,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "Composite human wellbeing: life expectancy, education attainment, and standard of living"
+        },
+        {
+          "id": "CPI",
+          "name": "Corruption Perceptions Index",
+          "publisher": "Transparency International",
+          "index_weight": 0.08,
+          "pct_of_factor": 4.15,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Perceived public sector corruption — trust and institutional integrity signal"
+        },
+        {
+          "id": "RULE_OF_LAW",
+          "name": "World Justice Project Rule of Law Index",
+          "publisher": "World Justice Project",
+          "index_weight": 0.08,
+          "pct_of_factor": 4.15,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Constraints on government power, absence of corruption, open government, and access to justice"
+        },
+        {
+          "id": "ND_GAIN",
+          "name": "ND-GAIN Country Index",
+          "publisher": "Notre Dame Global Adaptation Initiative",
+          "index_weight": 0.08,
+          "pct_of_factor": 4.15,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Climate vulnerability and adaptive capacity — long-run ecosystem durability signal"
+        },
+        {
+          "id": "INFORM_RISK",
+          "name": "INFORM Risk Index",
+          "publisher": "EU / OCHA",
+          "index_weight": 0.07,
+          "pct_of_factor": 3.63,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "Humanitarian risk from natural hazards and human crises — systemic fragility measure"
+        },
+        {
+          "id": "WHO_HEALTH",
+          "name": "World Health Statistics",
+          "publisher": "WHO",
+          "index_weight": 0.07,
+          "pct_of_factor": 3.63,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "Population health outcomes and healthcare system capacity"
+        },
+        {
+          "id": "CLIMATE_CHANGE_PERF",
+          "name": "Climate Change Performance Index",
+          "publisher": "Germanwatch / NewClimate Institute",
+          "index_weight": 0.07,
+          "pct_of_factor": 3.63,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "GHG emissions trajectory, renewable energy adoption, and climate policy ambition"
+        },
+        {
+          "id": "HOUSEHOLD_INCOME",
+          "name": "Household Income Distribution",
+          "publisher": "World Inequality Database",
+          "index_weight": 0.06,
+          "pct_of_factor": 3.11,
+          "pct_of_algorithm": 0.52,
+          "measurement_dimension": "Income inequality and distributional equity — social cohesion and consumption base signal"
+        },
+        {
+          "id": "LANCET_BURDEN",
+          "name": "Lancet Disease Burden Report",
+          "publisher": "The Lancet",
+          "index_weight": 0.06,
+          "pct_of_factor": 3.11,
+          "pct_of_algorithm": 0.52,
+          "measurement_dimension": "Disease burden, disability-adjusted life years, and public health system stress"
+        }
+      ]
+    },
+    "ENTREPRENEURSHIP_CAPACITY": {
+      "factor_share_pct": 15.39,
+      "primary_variables": [
+        {
+          "id": "GEI",
+          "name": "Global Entrepreneurship Index",
+          "publisher": "Babson College",
+          "index_weight": 0.20,
+          "pct_of_factor": 11.30,
+          "pct_of_algorithm": 1.74,
+          "measurement_dimension": "Entrepreneurial attitudes, abilities, and aspirations — system-level capacity for new venture creation"
+        },
+        {
+          "id": "STARTUP_GENOME",
+          "name": "Global Startup Ecosystem Report",
+          "publisher": "Startup Genome",
+          "index_weight": 0.15,
+          "pct_of_factor": 8.47,
+          "pct_of_algorithm": 1.30,
+          "measurement_dimension": "Startup output, ecosystem value, funding, talent density, and connectedness"
+        },
+        {
+          "id": "WB_BUSINESS_READY",
+          "name": "Business Ready (B-READY)",
+          "publisher": "World Bank",
+          "index_weight": 0.12,
+          "pct_of_factor": 6.78,
+          "pct_of_algorithm": 1.04,
+          "measurement_dimension": "Regulatory framework quality and public service efficiency for business lifecycle — start, operate, end"
+        },
+        {
+          "id": "GSER_EXTENDED",
+          "name": "Global Startup Ecosystem Report (Extended)",
+          "publisher": "Startup Genome",
+          "index_weight": 0.10,
+          "pct_of_factor": 5.65,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "Sectoral ecosystem rankings, performance benchmarks, and emerging market cohort analysis"
+        },
+        {
+          "id": "WB_ENTERPRISE_SURVEY",
+          "name": "Enterprise Surveys",
+          "publisher": "World Bank",
+          "index_weight": 0.09,
+          "pct_of_factor": 5.08,
+          "pct_of_algorithm": 0.78,
+          "measurement_dimension": "Firm-level obstacles to growth: access to finance, regulation, corruption, infrastructure, skills"
+        },
+        {
+          "id": "WEF_IE_ECOSYSTEMS",
+          "name": "Inclusive Entrepreneurship Ecosystems",
+          "publisher": "World Economic Forum",
+          "index_weight": 0.06,
+          "pct_of_factor": 3.39,
+          "pct_of_algorithm": 0.52,
+          "measurement_dimension": "Equity and inclusivity within startup ecosystems — breadth of participation signal"
+        }
+      ]
+    },
+    "PROSPERITY_OUTCOMES": {
+      "factor_share_pct": 12.96,
+      "primary_variables": [
+        {
+          "id": "IMF_GDP_GROWTH",
+          "name": "World Economic Outlook (GDP)",
+          "publisher": "IMF",
+          "index_weight": 0.15,
+          "pct_of_factor": 10.07,
+          "pct_of_algorithm": 1.30,
+          "measurement_dimension": "GDP growth rate, economic output trajectory, and macroeconomic momentum"
+        },
+        {
+          "id": "GSCI",
+          "name": "Global Sustainable Competitiveness Index",
+          "publisher": "Sustainable Competitiveness Institute",
+          "index_weight": 0.12,
+          "pct_of_factor": 8.05,
+          "pct_of_algorithm": 1.04,
+          "measurement_dimension": "Long-run sustainable competitive advantage: natural capital, social capital, intellectual capital, resource efficiency, governance"
+        },
+        {
+          "id": "IMF_WEO_EXTENDED",
+          "name": "World Economic Outlook (Extended)",
+          "publisher": "IMF",
+          "index_weight": 0.12,
+          "pct_of_factor": 8.05,
+          "pct_of_algorithm": 1.04,
+          "measurement_dimension": "Cross-validated macroeconomic forecasts: current account, fiscal balance, unemployment, inflation"
+        },
+        {
+          "id": "ILO_EMPLOYMENT",
+          "name": "World Employment and Social Outlook",
+          "publisher": "ILO",
+          "index_weight": 0.10,
+          "pct_of_factor": 6.71,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "Employment rates, labor market quality, decent work, and social protection coverage"
+        },
+        {
+          "id": "WB_NATIONAL_ACCOUNTS",
+          "name": "National Accounts Data",
+          "publisher": "World Bank",
+          "index_weight": 0.10,
+          "pct_of_factor": 6.71,
+          "pct_of_algorithm": 0.87,
+          "measurement_dimension": "Cross-validated GDP, consumption, investment, and government expenditure data"
+        },
+        {
+          "id": "ILO_LABOUR_EXTENDED",
+          "name": "ILOSTAT Labour Statistics",
+          "publisher": "ILO",
+          "index_weight": 0.09,
+          "pct_of_factor": 6.04,
+          "pct_of_algorithm": 0.78,
+          "measurement_dimension": "Granular labor force statistics: participation, wages, hours worked, informal employment share"
+        },
+        {
+          "id": "CB_INSIGHTS_UNICORN_TRACKER",
+          "name": "Unicorn Tracker",
+          "publisher": "CB Insights",
+          "index_weight": 0.08,
+          "pct_of_factor": 5.37,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Count and valuation of $1B+ private companies — scalable high-value company creation signal"
+        },
+        {
+          "id": "OECD_PRODUCTIVITY",
+          "name": "Compendium of Productivity Indicators",
+          "publisher": "OECD",
+          "index_weight": 0.08,
+          "pct_of_factor": 5.37,
+          "pct_of_algorithm": 0.70,
+          "measurement_dimension": "Labor and multifactor productivity growth — economic efficiency and long-run growth potential"
+        },
+        {
+          "id": "WB_POVERTY_TRACKER",
+          "name": "Poverty & Inequality Platform",
+          "publisher": "World Bank",
+          "index_weight": 0.07,
+          "pct_of_factor": 4.70,
+          "pct_of_algorithm": 0.61,
+          "measurement_dimension": "Poverty headcount, Gini coefficient, shared prosperity — inclusive growth quality signal"
+        }
+      ]
+    }
+  },
+  "tier_weight_summary": {
+    "description": "Breakdown of algorithmic weight by tier across all 163 indices. Shows the distribution of scoring power across tier levels.",
+    "tiers": [
+      {
+        "tier": "Primary",
+        "index_count": 58,
+        "total_weight": 5.65,
+        "avg_weight_per_index": 0.0974,
+        "algorithm_share_pct": 49.13,
+        "role": "Drives the score — these indices are required for any IEPA computation run"
+      },
+      {
+        "tier": "Secondary",
+        "index_count": 70,
+        "total_weight": 4.36,
+        "avg_weight_per_index": 0.0623,
+        "algorithm_share_pct": 37.91,
+        "role": "Enriches and validates — improves accuracy and enables cross-index consistency checks"
+      },
+      {
+        "tier": "Tertiary",
+        "index_count": 35,
+        "total_weight": 1.49,
+        "avg_weight_per_index": 0.0426,
+        "algorithm_share_pct": 12.96,
+        "role": "Contextual layer — powers scenario modeling, narrative UI, and sensitivity analysis"
+      }
+    ]
+  },
+  "measurement_dimensions": {
+    "description": "Cross-cutting measurement dimensions captured by the IEPA algorithm. Each dimension is measured by one or more indices across multiple factors.",
+    "dimensions": [
+      {
+        "dimension": "Capital & Investment",
+        "primary_factor": "FDI Accelerator",
+        "contributing_factors": ["FDI Accelerator", "Entrepreneurship Capacity"],
+        "key_indices": ["FDI_CONFIDENCE", "UNCTAD_WIR", "WB_FDI", "STARTUP_GENOME", "VC_KPMG"],
+        "algorithm_signal": "Measures both foreign and domestic capital deployment — the lifeblood of ecosystem formation"
+      },
+      {
+        "dimension": "Governance & Institutions",
+        "primary_factor": "Alignment",
+        "contributing_factors": ["Alignment", "Resilience"],
+        "key_indices": ["WGI_GOV_EFF", "WGI_REG_QUALITY", "WB_GOVERNANCE", "CPI", "RULE_OF_LAW"],
+        "algorithm_signal": "Institutional quality determines whether other factors convert into durable prosperity"
+      },
+      {
+        "dimension": "Technology & Innovation Output",
+        "primary_factor": "Innovation Capacity",
+        "contributing_factors": ["Innovation Capacity", "Alignment"],
+        "key_indices": ["GII", "STANFORD_AI_INDEX", "WIPO_PATENTS", "OECD_STI", "BII"],
+        "algorithm_signal": "Tracks both inputs (R&D, digital infrastructure) and outputs (patents, startups) of innovation"
+      },
+      {
+        "dimension": "Human Capital & Skills",
+        "primary_factor": "Innovation Capacity",
+        "contributing_factors": ["Innovation Capacity", "Alignment", "Resilience"],
+        "key_indices": ["HDI", "GTCI", "GCI", "ITU_DIGITAL_DEV", "WB_HUMAN_CAPITAL"],
+        "algorithm_signal": "Workforce depth and quality sets the ceiling on what an ecosystem can produce"
+      },
+      {
+        "dimension": "Societal Stability & Peace",
+        "primary_factor": "Resilience",
+        "contributing_factors": ["Resilience"],
+        "key_indices": ["GPI", "INFORM_RISK", "FSI", "DEMOCRACY_INDEX"],
+        "algorithm_signal": "Prerequisite signal — high instability overrides positive signals in other dimensions"
+      },
+      {
+        "dimension": "Environmental Sustainability",
+        "primary_factor": "Resilience",
+        "contributing_factors": ["Resilience", "Prosperity Outcomes"],
+        "key_indices": ["EPI", "ND_GAIN", "CLIMATE_CHANGE_PERF", "ENERGY_TRANSITION"],
+        "algorithm_signal": "Long-horizon durability signal — ecosystems with poor environmental resilience face compounding decay"
+      },
+      {
+        "dimension": "Startup & Venture Activity",
+        "primary_factor": "Entrepreneurship Capacity",
+        "contributing_factors": ["Entrepreneurship Capacity", "Prosperity Outcomes"],
+        "key_indices": ["GEI", "STARTUP_GENOME", "CB_INSIGHTS_UNICORN_TRACKER", "DEALROOM_ECOSYSTEMS"],
+        "algorithm_signal": "Measures velocity and scale of new company creation — the most direct proxy for ecosystem output"
+      },
+      {
+        "dimension": "Economic Output & Growth",
+        "primary_factor": "Prosperity Outcomes",
+        "contributing_factors": ["Prosperity Outcomes"],
+        "key_indices": ["IMF_GDP_GROWTH", "GSCI", "IMF_WEO_EXTENDED", "WB_NATIONAL_ACCOUNTS"],
+        "algorithm_signal": "Lagging indicator — validates whether upstream factor conditions converted into realized economic gains"
+      },
+      {
+        "dimension": "Employment & Labor Markets",
+        "primary_factor": "Prosperity Outcomes",
+        "contributing_factors": ["Prosperity Outcomes", "Resilience"],
+        "key_indices": ["ILO_EMPLOYMENT", "ILO_LABOUR_EXTENDED", "OECD_PRODUCTIVITY"],
+        "algorithm_signal": "Quality of employment (not just quantity) reflects whether prosperity is distributed, not concentrated"
+      },
+      {
+        "dimension": "Market Access & Trade",
+        "primary_factor": "FDI Accelerator",
+        "contributing_factors": ["FDI Accelerator", "Alignment"],
+        "key_indices": ["OECD_TRADE_FACILITATION", "WTO_TRADE_POLICY", "KOF_GLOBALISATION", "LPI"],
+        "algorithm_signal": "Determines whether a market is accessible and connectable to global value chains"
+      }
+    ]
+  }
+}
